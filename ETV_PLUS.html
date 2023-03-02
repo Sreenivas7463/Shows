@@ -49,7 +49,7 @@
     function play_stream(url) {
     var video = document.getElementById('video');
     var m3u8Url = decodeURIComponent(url);
-
+    alert(m3u8Url);
     if (Hls.isSupported()) {
         var hls = new Hls();
         hls.loadSource(m3u8Url);
