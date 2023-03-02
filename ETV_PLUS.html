@@ -35,13 +35,6 @@
 
   <script>
    
-      (function(window, videojs) {
-      var player = window.player = videojs('videojs-hls-quality-selector-player');
-      player.hlsQualitySelector({
-          displayCurrentQuality: true,
-      });
-    }(window, window.videojs));
-    
     function play_stream(url) {
     var video = document.getElementById('video');
     var m3u8Url = decodeURIComponent(url);
