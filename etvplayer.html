@@ -54,7 +54,7 @@
       var urlv = window.location.hash.substr(1);
       alert(urlv);
       const urla = urlv.split("&");
-      var title = urla[1]; alert(title);
+      var title = urla[1];
       var 4kfhd = decodeURI(urla[2]);
       document.getElementById('titled').innerHTML = 'ETV - ' + decodeURI(title);
       const source = video.getElementsByTagName("source")[0].src = "https://etvwin-s3.akamaized.net/" + urla[0] + "/" + 4kfhd+"_playlist.m3u8";
