@@ -54,10 +54,10 @@
       var urlv = window.location.hash.substr(1);
       alert(urlv);
       const urla = urlv.split("&");
-      var title = urla[1];
+      var title = urla[3];
       var fhd = decodeURI(urla[2]);
       document.getElementById('titled').innerHTML = 'ETV - ' + decodeURI(title);
-      const source = video.getElementsByTagName("source")[0].src = "https://etvwin-s3.akamaized.net/" + urla[0] + "/" + fhd +"_playlist.m3u8";
+      const source = video.getElementsByTagName("source")[0].src = "https://etvwin-s3.akamaized.net/" + urla[0] + "/" + fhd + "_playlist.m3u8";
       //alert(source);
       // For more options see: https://github.com/sampotts/plyr/#options
       // captions.update is required for captions to work with hls.js
