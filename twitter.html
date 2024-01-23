@@ -55,11 +55,10 @@
             var urlv = window.location.hash.substr(1);
             alert(urlv);
             const urla = urlv.split("&");
-            alert(urla);
             var title = urla[2];
             var fhd = decodeURI(urla[1]);
             document.getElementById('titled').innerHTML = 'Twitter - ' + decodeURI(title);
-            const source = video.getElementsByTagName("source")[0].src = "https://video.twimg.com/amplify_video/1749643759204352000/pl/avc1/1280x720/mp4a/128000/YSTaZvMbsGIkvO1d.m3u8";
+            const source = video.getElementsByTagName("source")[0].src = "https://video.twimg.com/amplify_video/" + urla[4] +"/pl/avc1/"+ fhd +"/mp4a/128000/"+ urla[0] +".m3u8";
             //alert(source);
             // For more options see: https://github.com/sampotts/plyr/#options
             // captions.update is required for captions to work with hls.js
