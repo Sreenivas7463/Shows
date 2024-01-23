@@ -33,7 +33,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <video controls crossorigin playsinline 
-                poster="https://pbs.twimg.com/amplify_video_thumb/1749643759204352000/img/a50HYB2twq2qaOMI.jpg">
+                poster="">
                     <source type="application/x-mpegURL"
                         src="https://video.twimg.com/amplify_video/1749643759204352000/pl/avc1/1280x720/mp4a/128000/YSTaZvMbsGIkvO1d.m3u8">
                 </video>
@@ -79,6 +79,7 @@
 
                     // Add new qualities to option
                     defaultOptions.quality = {
+                        poster: 'https://pbs.twimg.com/amplify_video_thumb/' + urla[4] +'/img/' + urla[3] +'.jpg',
                         default: availableQualities[0],
                         options: availableQualities,
                         // this ensures Plyr to use Hls to update quality level
