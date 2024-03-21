@@ -67,8 +67,18 @@
               var za = 'pu/pl/avc1';
             }
 
+            if (urla[6] == 'ea') {
+                var az = 'mp4a/128000/';
+                
+            } else  {
+                var az = '';
+               
+            }
+
+            
+
             document.getElementById('titled').innerHTML = 'Twitter - ' + decodeURI(title);
-            const source = video.getElementsByTagName("source")[0].src = "https://video.twimg.com/"+ xy +"/" + urla[4] +"/"+ za +"/"+ fhd +"/mp4a/128000/"+ urla[0] +".m3u8";
+            const source = video.getElementsByTagName("source")[0].src = "https://video.twimg.com/"+ xy +"/" + urla[4] +"/"+ za +"/"+ fhd +"/"+ az + urla[0] +".m3u8";
             //alert(source);
             // For more options see: https://github.com/sampotts/plyr/#options
             // captions.update is required for captions to work with hls.js
