@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 5 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <select class="form-select" id="sitechng" name="selectnm" title="select">
+            <option>--- Select Site ---</option>
+            <option value="https://newsresolution.com">Newsresolution</option>
+            <option value="https://movieetalks.com">Movieetalks</option>
+            <option value="https://www.medianews4u.com">Medianews4u</option>
+            <option value="https://www.iwmbuzz.com">Iwmbuzz</option>
+            <option value="https://urbanasian.com">Urbanasian</option>
+            <option value="https://upayapps.com">Upayapps</option>
+            <option value="https://theprint.in">The Print</option>
+            <option value="https://www.highheelconfidential.com">Highheel Confidential</option>
+            <option value="https://www.123telugu.com/telugu">123Telugu - Tel</option>
+            <option value="https://123telugu.com">123Telugu - Eng</option>
+            <option value="https://www.telugubulletin.com">Telugubulletin</option>
+            <option value="https://www.manacinema.com">Manacinema</option>
+            <option value="https://www.sohamrockstar.com">Sohamrockstar</option>
+            <option value="https://southindianactress.in">Southindianactress</option>
+            <option value="https://moviesarkar.com">Moviesarkar</option>
+            <option value="https://glamactress.com">Glamactress</option>
+            <option value="https://codeastro.com">Codeastro</option>
+            <option value="https://www.themrphone.com/tech">Themrphone</option>
+            <option value="https://www.udayavani.com">Udayavani</option>
+            <option value="https://www.gulte.com">Gulte</option>
+            <option value="https://www.gizmochina.com">Gizmochina</option>
+            <option value="https://telugu.gulte.com">Gulte Telugu</option>
+            <option value="https://www.gulte.com">Gulte English</option>
+            <option value="https://www.gogi.in">Gogi</option>
+            <option value="https://tnewstelugu.com">Tnews</option>
+            <option value="https://9to5google.com">9to5</option>
+            <option value="https://www.bgr.in">BGR</option>
+            <option value="https://www.tv9telugu.com">TV9 Telugu</option>
+            <option value="https://tv9kannada.com">TV9 Kannada</option>
+            <option value="https://ytechb.com">Ytechb</option>
+            <option value="https://bollywoodtrendy.com">Bollywood Trendy</option>
+            <option value="https://jsnewstimes.com">JS News</option>
+            <option value="https://teluguhungama.com">Teluguhungama</option>
+            <option value="https://thenewsqube.com">The news qube</option>
+            <option value="https://eliteanswers.in">Eliteanswers</option>
+            <option value="https://newssow.com">Newssow</option>
+            <option value="https://sathishedutech.com">Sathishedutech</option>
+            <option value="https://www.pregnyamedia.com">Pregnyamedia</option>
+            <option value="https://getindianews.com">Getindianews</option>
+            <option value="https://www.newsbugz.com">newsbugz</option>
+            <option value="https://cinechitchat.com">Cinechitchat</option>
+            <option value="https://businessjobalert.com">Businessjobalert</option>
+            <option value="https://indiadailylive.com">Indiadailylive</option>
+            <option value="https://rpmtechtips.com">Rpmtechtips</option>
+            <option value="https://www.alphr.com">alphr</option>
+            <option value="https://www.travelescape.in">Travelescape</option>
+            <option value="https://techwiser.com">techwiser</option>
+            <option value="https://beebom.com">beebom</option>
+            <option value="https://www.thetelugufilmnagar.com">The telugu filmnagar - English</option>
+            <!--<option value="https://telugu.thetelugufilmnagar.com">The telugu filmnagar - Telugu</option>-->
+            <option value="https://www.igyaan.in">Igyaan</option>
+            <option value="https://telugucinema.com">Telugucinema</option>
+            <option value="https://vefeed.com">Vefeed</option>
+            <option value="https://www.breezemasti.com">Breezemasti</option>
+            <option value="https://newsresolution.com">Newsresolution</option>
+            <option value="https://telanganatoday.com">Telanganatoday</option>
+            <option value="https://latestnewstelugu.com">Latest News Telugu</option>
+            <option value="https://newsazi.com">Newsazi</option>
+
+        </select>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-8">
+
+                <div id="contentdisplay"></div>
+
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function modify() {
+            var i = 0;
+            // Get a NodeList of all .demo elements
+            const demoClasses = document.querySelectorAll('img');
+            //alert(demoClasses[0].src);
+            // Change the text of multiple elements with a loop
+            demoClasses.forEach(element => {
+                //element.textContent = 'All demo classes updated.';
+                //alert(demoClasses[i].src);
+                element.setAttribute("class", "img-fluid rounded-3");
+                i++;
+            });
+
+
+        }
+        $(document).ready(function () {
+
+            $('#sitechng').change(function () {
+                $('#contentdisplay').html($(this).val() + ' Loading Please Wait');
+                var site = $('#sitechng').val();
+
+                axios.get(site + '/wp-json/wp/v2/posts?per_page=100&page=1', {
+                    headers: {
+                        Accept: "application/json",
+                        "Content-Type": "application/json;charset=UTF-8",
+                    },
+                }).then(function (response) {
+                    $('#contentdisplay').html('');
+                    console.log(response.data);
+                    for (var i = 0; i < response.data.length; i++) {
+                        var contentd = '<h2 class="text-info mb-2">' + response.data[i]['title']['rendered'] + ' <small class="text-bottom text-danger fs-6">' + moment(response.data[i]['date']).format('DD-MM-YYYY h:m:s a') + '</small></h2>' + response.data[i]['content']['rendered'];
+
+                        contentd += '<div class="mt-3 mb-3"><a href="' + response.data[i].guid.rendered + '" target="_blank" >Source Link</a></div>';
+
+                        $('#contentdisplay').append(contentd);
+                    }
+
+
+
+                })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+
+            });
+
+            setTimeout(modify, 20000);
+
+        })
+    </script>
+</body>
+
+</html>
