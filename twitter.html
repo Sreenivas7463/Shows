@@ -57,8 +57,7 @@
             const urla = urlv.split("&");
             var title = urla[2];
             var fhd = decodeURI(urla[1]);
-            alert('https://pbs.twimg.com/'+xy+'/' + urla[4] + '/img/' + urla[3] + '.jpg');
-
+            
             if(urla[5]=='a'){
               var xy = 'amplify_video';
               var za = 'pl/avc1';
@@ -75,7 +74,8 @@
                
             }
 
-            
+            alert('https://pbs.twimg.com/'+xy+'/' + urla[4] + '/img/' + urla[3] + '.jpg');
+
 
             document.getElementById('titled').innerHTML = 'Twitter - ' + decodeURI(title);
             const source = video.getElementsByTagName("source")[0].src = "https://video.twimg.com/"+ xy +"/" + urla[4] +"/"+ za +"/"+ fhd +"/"+ az + urla[0] +".m3u8";
