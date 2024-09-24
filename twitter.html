@@ -34,7 +34,7 @@
             <div class="col-md-8">
                 <video controls id="myVideo"
                 poster="">
-                    <source type="video/mp4"
+                    <source type="video/mp4" id="mySource"
                         src="">
                 </video>
             </div>
@@ -74,12 +74,14 @@
                
             }
 
-            alert('https://pbs.twimg.com/'+xy+'_thumb/' + urla[4] + '/pu/img/' + urla[3] + '.jpg');
+            //alert('https://pbs.twimg.com/'+xy+'_thumb/' + urla[4] + '/pu/img/' + urla[3] + '.jpg');
 
 
             document.getElementById('titled').innerHTML = 'Twitter - ' + decodeURI(title);
-            const source = video.getElementsByTagName("source")[0].src = "https://video.twimg.com/"+ xy +"/" + urla[4] +"/"+ za +"/"+ fhd +"/"+ az + urla[0] +"."+urla[7];
-            //alert(source);
+            const sourceElement = document.getElementById('mySource');
+            sourceElement.src = "https://video.twimg.com/"+ xy +"/" + urla[4] +"/"+ za +"/"+ fhd +"/"+ az + urla[0] +"."+urla[7];
+
+            
             // For more options see: https://github.com/sampotts/plyr/#options
             // captions.update is required for captions to work with hls.js
 
