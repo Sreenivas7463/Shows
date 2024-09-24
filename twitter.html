@@ -84,6 +84,17 @@
             // captions.update is required for captions to work with hls.js
             const defaultOptions = {};
 
+            // Add new qualities to option
+                    defaultOptions.quality = {
+                        poster: 'https://pbs.twimg.com/'+xy+'_thumb/' + urla[4] + '/pu/img/' + urla[3] + '.jpg',
+                        default: availableQualities[0],
+                        options: availableQualities,
+                        // this ensures Plyr to use Hls to update quality level
+                        forced: true,
+                        onChange: (e) => updateQuality(e),
+                    }
+
+
             if (Hls.isSupported()) {
                 // For more Hls.js options, see https://github.com/dailymotion/hls.js
                 const hls = new Hls();
@@ -97,16 +108,7 @@
                     // Transform available levels into an array of integers (height values).
                     const availableQualities = hls.levels.map((l) => l.height)
 
-                    // Add new qualities to option
-                    defaultOptions.quality = {
-                        poster: 'https://pbs.twimg.com/'+xy+'_thumb/' + urla[4] + '/pu/img/' + urla[3] + '.jpg',
-                        default: availableQualities[0],
-                        options: availableQualities,
-                        // this ensures Plyr to use Hls to update quality level
-                        forced: true,
-                        onChange: (e) => updateQuality(e),
-                    }
-
+                    
                     // Initialize here
                     const player = new Plyr(video, defaultOptions);
                 });
