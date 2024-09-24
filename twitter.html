@@ -63,7 +63,7 @@
               var za = 'pl/avc1';
             }else if (urla[5] == 'e') {
               var xy = 'ext_tw_video';
-              var za = 'pu/pl/avc1';
+              var za = 'pu/vid/avc1';
             }
 
             if (urla[6] == 'ea') {
@@ -78,7 +78,7 @@
 
 
             document.getElementById('titled').innerHTML = 'Twitter - ' + decodeURI(title);
-            const source = video.getElementsByTagName("source")[0].src = "https://video.twimg.com/"+ xy +"/" + urla[4] +"/"+ za +"/"+ fhd +"/"+ az + urla[0] +"."+urla[6];
+            const source = video.getElementsByTagName("source")[0].src = "https://video.twimg.com/"+ xy +"/" + urla[4] +"/"+ za +"/"+ fhd +"/"+ az + urla[0] +"."+urla[7];
             //alert(source);
             // For more options see: https://github.com/sampotts/plyr/#options
             // captions.update is required for captions to work with hls.js
