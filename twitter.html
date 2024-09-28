@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://www.etvwin.com/favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css"/>
    
     <style type="text/css">
         .container {
@@ -33,7 +34,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <video controls id="myVideo" poster="">
+                <video controls id="my-video" poster="">
                     <source   src="" id="mySource" type="video/mp4">
                 </video>
             </div>
@@ -43,6 +44,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
  
@@ -93,6 +95,18 @@
 
           
         });
+
+        fluidPlayer(
+	'my-video',
+	{
+		layoutControls: {
+			primaryColor: "#28B8ED"
+		},
+		layoutControls: {
+			allowDownload: true // Default false
+		},		
+	}
+);
     </script>
 </body>
 
