@@ -51,14 +51,14 @@
             var title = img[0].replace('%20', '');
 
             for (i = 1; i <= 9; i++) {
-                var thumb = 'https://www.behindwoods.com/tamil-actress/' + urla[0] + '-0' + i + '.jpg';
+                var thumb = 'https://www.behindwoods.com/tamil-actress/' + img[0] + '/thumbnails/' + img[1] + '-0' + i + '.jpg';
                 var pic = 'https://www.behindwoods.com/tamil-actress/' + urla[0] + '-0' + i + '.jpg';
 
                 xyz += '<a  class="gallery-item" data-src="' + pic + '" data-sub-html="<h4>' + title + '-' + i + '</h4>"> <img alt="' + title + '-' + i + '" class="img-responsive" src="' + thumb + '" /></a>';
             }
 
             for (i = 10; i <= urla[1]; i++) {
-                var thumb = 'https://www.behindwoods.com/tamil-actress/' + urla[0] + '-' + i + '.jpg';
+                var thumb = 'https://www.behindwoods.com/tamil-actress/' + img[0] + '/thumbnails/' + img[1] + '-0' + i + '.jpg';
                 var pic = 'https://www.behindwoods.com/tamil-actress/' + urla[0] + '-' + i + '.jpg';
 
                 xyz += '<a  class="gallery-item" data-src="' + pic + '" data-sub-html="<h4>' + title + '-' + i + '</h4>"> <img alt="' + title + '-' + i + '" class="img-responsive" src="' + thumb + '" /></a>';
