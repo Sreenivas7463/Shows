@@ -49,9 +49,14 @@
             const img = urla[0].split('/');
             var xyz = '';
             var title = img[1].replace('%20', '');
+            var s = '';
+            if (urla[2]) {
+                s = urla[2];
+            } else {
+                s = 1;
+            }
 
-
-            for (i = 1; i <= urla[1]; i++) {
+            for (i = s; i <= urla[1]; i++) {
                 var thumb = 'https://www.idlebrain.com/movie/photogallery/' + img[0] + '/' + 'images' + '/th_' + img[1] + i + '.jpg';
                 var pic = 'https://www.idlebrain.com/movie/photogallery/' + img[0] + '/' + 'images' + '/' + img[1] + i + '.jpg';
 
