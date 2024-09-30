@@ -48,15 +48,12 @@
 
             const img = urla[0].split('/');
             var xyz = '';
-            var title0 = img[4].replace('%20', '');
+            var title = img[1].replace('%20', '');
 
-            var title1 = title0.replace('%20', '');
-
-            var title = title1.replace('%20', '');
 
             for (i = 1; i <= urla[1]; i++) {
-                var thumb = 'https://www.idlebrain.com/movie/photogallery/' + img[0] + '/' + 'images' + '/th_' + img[2] + i + '.jpg';
-                var pic = 'https://www.idlebrain.com/movie/photogallery/' + img[0] + '/' + 'images' + '/' + img[2] + i + '.jpg';
+                var thumb = 'https://www.idlebrain.com/movie/photogallery/' + img[0] + '/' + 'images' + '/th_' + img[1] + i + '.jpg';
+                var pic = 'https://www.idlebrain.com/movie/photogallery/' + img[0] + '/' + 'images' + '/' + img[1] + i + '.jpg';
 
                 xyz += '<a  class="gallery-item" data-src="' + pic + '" data-sub-html="<h4>' + title + '-' + i + '</h4>"> <img alt="' + title + '-' + i + '" class="img-responsive" src="' + thumb + '" /></a>';
             }
