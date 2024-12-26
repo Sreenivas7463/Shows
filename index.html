@@ -873,6 +873,16 @@
       loop: true
     });
 
+    $(document).ready(function () {
+      if (jQuery) {
+        // jQuery is loaded  
+        alert("Yeah!");
+      } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+      }
+    });
+
     $('a[rel=popover]').popover({
       html: true,
       trigger: 'hover',
