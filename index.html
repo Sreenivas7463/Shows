@@ -830,8 +830,8 @@
 
         <li><a class="glightbox" href="./epi-13-MRMS_03Jan23.html">epi-13-MRMS_03Jan23</a></li>
 
-        <li><a class="glightbox" rel="popover"
-            data-img="https://etv-win-image.akamaized.net/etvwin/shows/shows/jathiratnalu/subcategories/season1/episodes/epi17/36860/epi-17-JTR_26Apr22_EP_17-768x432.jpg"
+        <li><a class="glightbox" rel="popover" data-bs-toggle="popover" data-bs-trigger="hover"
+            data-bs-content="<img src='https://etv-win-image.akamaized.net/etvwin/shows/shows/jathiratnalu/subcategories/season1/episodes/epi17/36860/epi-17-JTR_26Apr22_EP_17-768x432.jpg' alt='epi-17-JTR_26Apr22_EP_17' width='100%'>"
             href="JTR_26Apr22_EP_17.html">JTR_26Apr22_EP_17</a></li>
         <li><a class="glightbox" href="./epi-169-JTR_29Nov22.html">epi-169-JTR_29Nov22</a></li>
 
@@ -873,12 +873,11 @@
       loop: true
     });
 
-    $('a[rel=popover]').popover({
-      html: true,
-      trigger: 'hover',
-      placement: 'bottom',
-      content: function () { return '<img src="' + $(this).data('img') + '" />'; }
-    });
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+
 
   </script>
   <!-- Cloudflare Web Analytics -->
