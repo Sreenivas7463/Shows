@@ -55,18 +55,11 @@
 
             // For more options see: https://github.com/sampotts/plyr/#options
             // captions.update is required for captions to work with hls.js
-            const defaultOptions = {};
 
-            // Add new qualities to option
-            defaultOptions.quality = {
-                default: availableQualities[0],
-                options: availableQualities,
-                // this ensures Plyr to use Hls to update quality level
-                forced: true,
-                onChange: (e) => updateQuality(e),
-            }
+
+
             // default options with no quality update in case Hls is not supported
-            const player = new Plyr(video, defaultOptions);
+            const player = new Plyr(video);
 
 
             function updateQuality(newQuality) {
