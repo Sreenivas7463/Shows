@@ -52,24 +52,10 @@
         document.addEventListener("DOMContentLoaded", () => {
             const video = document.querySelector("video");
 
-
-            // For more options see: https://github.com/sampotts/plyr/#options
-            // captions.update is required for captions to work with hls.js
-
-
-
-            // default options with no quality update in case Hls is not supported
             const player = new Plyr(video);
 
 
-            function updateQuality(newQuality) {
-                window.hls.levels.forEach((level, levelIndex) => {
-                    if (level.height === newQuality) {
-                        console.log("Found quality match with " + newQuality);
-                        window.hls.currentLevel = levelIndex;
-                    }
-                });
-            }
+
         });
     </script>
 </body>
