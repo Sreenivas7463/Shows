@@ -60,7 +60,7 @@
 
         const urla = urlv.split("&");
         
-        var title = urla[1];
+        var title = decodeURI(urla[1]);
       
         document.getElementById('titled').innerHTML = 'Live - '+title;
 
