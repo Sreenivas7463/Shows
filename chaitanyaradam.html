@@ -15,8 +15,20 @@
 
         }
 
-        video {
-            width: 100%;
+        body {
+            margin: 0;
+            /* Reset default margin */
+        }
+
+        iframe {
+            display: block;
+            /* iframes are inline by default */
+            background: #000;
+            border: none;
+            /* Reset default border */
+            height: 100vh;
+            /* Viewport-relative units */
+            width: 100vw;
         }
     </style>
 </head>
@@ -52,7 +64,7 @@
             alert(urlv);
 
             document.getElementById('titled').innerHTML = 'Chaitanya Radam';
-            const source = document.getElementsById("frame").src = "https://telugudesam.org/wp-content/uploads/2025/01/%E0%B0%9A%E0%B1%88%E0%B0%A4%E0%B0%A8%E0%B1%8D%E0%B0%AF%E0%B0%B0%E0%B0%A5%E0%B0%82-" + urlv + ".pdf";
+            document.getElementById("frame").src = "https://telugudesam.org/wp-content/uploads/2025/01/%E0%B0%9A%E0%B1%88%E0%B0%A4%E0%B0%A8%E0%B1%8D%E0%B0%AF%E0%B0%B0%E0%B0%A5%E0%B0%82-" + urlv + ".pdf";
 
 
         });
