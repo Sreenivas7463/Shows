@@ -37,7 +37,7 @@
     <div class="container py-5">
         <div class="row">
 
-            <div class="col-md-8" id="framemain">
+            <div class="col-md-8 ratio ratio-16x9" id="framemain">
 
             </div>
             <div class="col-md-14" id="frame"></div>
@@ -63,7 +63,7 @@
       
         document.getElementById('titled').innerHTML = 'Live - '+title;
 
-        document.getElementById('framemain').innerHTML = `<iframe src="https://www.youtube.com/embed/` + urla[0] + `" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        document.getElementById('framemain').innerHTML = `<iframe src="https://www.youtube.com/embed/` + urla[0] + `"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 
         let frame = document.createElement("iframe");
         frame.referrerPolicy = "origin";
