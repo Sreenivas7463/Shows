@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://www.etvwin.com/favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    
     <style type="text/css">
         .container {
             padding-top: 18vh;
@@ -57,7 +57,11 @@
 
         document.getElementById('framemain').innerHTML = `<iframe src="https://www.youtube.com/embed/` + urlv + `" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 
-        document.getElementById('titled').innerHTML = 'Live';
+        const urla = urlv.split("&");
+        
+        var title = urla[0];
+      
+        document.getElementById('titled').innerHTML = 'Live - '+title;
 
 
 
