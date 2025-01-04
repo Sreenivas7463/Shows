@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Live </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://www.etvwin.com/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style type="text/css">
+        .container {
+            padding-top: 18vh;
+            margin: 20px auto;
+
+        }
+
+        body {
+            margin: 0;
+            /* Reset default margin */
+        }
+
+        #chat-embed {
+            height: 315px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1 id="titled"></h1>
+
+    </div>
+
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-md-8" id="framemain">
+
+            </div>
+            <div class="col-md-14" id="frame"></div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+
+        var urlv = window.location.hash.substr(1);
+        //alert(urlv);
+
+        document.getElementById('framemain').innerHTML = `<iframe src="https://www.youtube.com/embed/` + urlv + `" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+
+        document.getElementById('titled').innerHTML = 'Live';
+
+
+
+        let frame = document.createElement("iframe");
+        frame.referrerPolicy = "origin";
+        frame.src = "https://www.youtube.com/live_chat?v=" + urlv + "&embed_domain=" + window.location.hostname;
+        frame.frameBorder = "0";
+        frame.id = "chat-embed";
+        let wrapper = document.getElementById("frame");
+        wrapper.appendChild(frame);
+
+
+
+
+    </script>
+</body>
+
+</html>
