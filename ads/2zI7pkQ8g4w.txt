@@ -2,7 +2,7 @@
     <div class="card">
   <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/51kRsmraj3L._SL1500_.jpg" alt="Card image"  >
   <div class="card-body">
-    <h4 class="card-title">Fire-Boltt</h4>
+    <h4 class="card-title">Noise</h4>
             <p class="card-text">Noise Airwave Max 4 Wireless Over-Ear Headphones with 70H Playtime, ENC, 40mm Driver, Low Latency(up to 40ms), Dual Pairing, BT v5.4 (Calm Beige)
 </p>
     <a href="https://amzn.to/4jj3wCq" class="btn btn-warning" target="_blank">View Product</a>
@@ -13,7 +13,7 @@
  <div class="card">
   <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/61xnyHOBIPL._SL1500_.jpg" alt="Card image"  >
   <div class="card-body">
-      <h4 class="card-title">Fire-Boltt</h4>
+      <h4 class="card-title">Noise</h4>
             <p class="card-text">Noise Airwave Max 4 Wireless Over-Ear Headphones with 70H Playtime, ENC, 40mm Driver, Low Latency(up to 40ms), Dual Pairing, BT v5.4 (Calm Beige)</p>
     <a href="https://amzn.to/4jj3wCq" class="btn btn-warning" target="_blank">View Product</a>
   </div>
@@ -22,7 +22,7 @@
  <div class="card">
   <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/519c9amXadL._SL1500_.jpg" alt="Card image"  >
   <div class="card-body">
-      <h4 class="card-title">Fire-Boltt</h4>
+      <h4 class="card-title">Noise</h4>
             <p class="card-text">Noise Airwave Max 4 Wireless Over-Ear Headphones with 70H Playtime, ENC, 40mm Driver, Low Latency(up to 40ms), Dual Pairing, BT v5.4 (Calm Beige)
 </p>
     <a href="https://amzn.to/4jj3wCq" class="btn btn-warning" target="_blank">View Product</a>
