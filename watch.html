@@ -36,8 +36,8 @@
                 <div class="ratio ratio-16x9" id="framemain"></div>
 
             </div>
-            <div id="div1">
-                <embed src="files.txt" width="600" height="400" type="text/html">
+            <div id="new-projects">
+
             </div>
         </div>
     </div>
@@ -63,6 +63,7 @@
 
         document.getElementById('framemain').innerHTML = `<iframe src="https://www.youtube.com/embed/` + urla[0] + `"  width="100%" height="400" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 
+        $("#new-projects").load("/files.text");
     </script>
 </body>
 
