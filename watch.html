@@ -36,7 +36,9 @@
                 <div class="ratio ratio-16x9" id="framemain"></div>
 
             </div>
-            <div id="div1"></div>
+            <div id="div1">
+                <embed src="files.txt" width="600" height="400" type="text/plain">
+            </div>
         </div>
     </div>
 
@@ -60,22 +62,6 @@
         document.getElementById('titled').innerHTML = title;
 
         document.getElementById('framemain').innerHTML = `<iframe src="https://www.youtube.com/embed/` + urla[0] + `"  width="100%" height="400" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-
-
-        function load() {
-            var file = new XMLHttpRequest();
-            file.open("GET", "/files.txt", true);
-            file.onreadystatechange = function () {
-                if (file.readyState === 4) {  // Makes sure the document is ready to parse
-                    if (file.status === 200) {  // Makes sure it's found the file
-                        text = file.responseText;
-                        document.getElementById("div1").innerHTML = text;
-                    }
-                }
-            }
-        }
-
-        window.onLoad = load();
 
     </script>
 </body>
