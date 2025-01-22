@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://www.etvwin.com/favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
     <style type="text/css">
         .container {
             padding-top: 18vh;
@@ -31,14 +31,17 @@
 
     <div class="container py-5">
         <div class="row">
+            <div class="carousel-wrap" id="ads">
+
+            </div>
+        </div>
+        <div class="row">
 
             <div class="col-md-10 mx-auto">
                 <div class="ratio ratio-16x9" id="framemain"></div>
 
             </div>
-            <div id="new-projects">
 
-            </div>
         </div>
     </div>
 
@@ -46,6 +49,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
 
 
     <script>
@@ -63,7 +67,31 @@
 
         document.getElementById('framemain').innerHTML = `<iframe src="https://www.youtube.com/embed/` + urla[0] + `"  width="100%" height="400" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 
-        $("#new-projects").load("/files.txt");
+        $("#ads").load("/ads/files.txt");
+
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText: [
+                "<i class='fa fa-caret-left'></i>",
+                "<i class='fa fa-caret-right'></i>"
+            ],
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
     </script>
 </body>
 
