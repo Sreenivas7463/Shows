@@ -47,6 +47,7 @@
             const urla = urlv.split("&");
 
             const img = urla[0];
+            const img0 = urla[1];
 
             const imgt = img.split("_");
 
@@ -57,21 +58,21 @@
             console.log(len);
 
             var xyz = '';
-            var title = img;
+            var title = imgt[0] + +imgt[1];
 
 
 
             for (i = 1; i <= urla[1]; i++) {
 
                 if (i > 9) {
-                    var thumb = 'https://www.cinejosh.com/gallereys/actress/thumb/' + img + '/' + img + '_0' + i + '.jpg';
-                    var pic = 'https://www.cinejosh.com/gallereys/actress/normal/' + img + '/' + img + '_0' + i + '.jpg';
+                    var thumb = 'https://www.cinejosh.com/gallereys/actress/thumb/' + img + '/' + img0 + '_0' + i + '.jpg';
+                    var pic = 'https://www.cinejosh.com/gallereys/actress/normal/' + img + '/' + img0 + '_0' + i + '.jpg';
 
                     xyz += '<a  class="gallery-item" data-src="' + pic + '" data-sub-html="<h4>' + title + '-' + i + '</h4>"> <img alt="' + title + '-' + i + '" class="img-responsive" src="' + thumb + '" /></a>';
                 }
                 else {
-                    var thumb = 'https://www.cinejosh.com/gallereys/actress/thumb/' + img + '/' + img + '_00' + i + '.jpg';
-                    var pic = 'https://www.cinejosh.com/gallereys/actress/normal/' + img + '/' + img + '_00' + i + '.jpg';
+                    var thumb = 'https://www.cinejosh.com/gallereys/actress/thumb/' + img + '/' + img0 + '_00' + i + '.jpg';
+                    var pic = 'https://www.cinejosh.com/gallereys/actress/normal/' + img + '/' + img0 + '_00' + i + '.jpg';
 
                     xyz += '<a  class="gallery-item" data-src="' + pic + '" data-sub-html="<h4>' + title + '-' + i + '</h4>"> <img alt="' + title + '-' + i + '" class="img-responsive" src="' + thumb + '" /></a>';
                 }
