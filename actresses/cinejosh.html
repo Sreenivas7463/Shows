@@ -47,12 +47,13 @@
             const urla = urlv.split("&");
 
             const img = urla[0];
+            const imgt = urla[1];
             var xyz = '';
-            var title = img;
+            var title = imgt;
 
 
 
-            for (i = 1; i <= urla[1]; i++) {
+            for (i = 1; i <= urla[2]; i++) {
 
                 if (i > 9) {
                     var thumb = 'https://www.cinejosh.com/gallereys/actress/thumb/' + img + '/' + img + '_0' + i + '.jpg';
