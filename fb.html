@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>
+    <title id="title">
         FB Player
     </title>
     <meta charset="utf-8">
@@ -51,6 +51,7 @@
 
             const source = video.src = "https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=" + urla[0] + " ";
 
+            document.getElementById("title").innerHTML = 'FB Player -' + title;
         });
     </script>
 
