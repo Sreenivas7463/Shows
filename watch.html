@@ -95,7 +95,7 @@
             var myObject;
             // Create an instance of the FileSystemObject
             myObject = new ActiveXObject("Scripting.FileSystemObject"); // check to see if the file exists and alert user of status 
-            if (myObject.FileExists("/ads/" + urla[0] + ".txt")) {
+            if (myObject.FileExists("https://raw.githubusercontent.com/Sreenivas7463/Shows/refs/heads/main/ads/" + urla[0] + ".txt")) {
 
                 $("#ads").load("/ads/" + urla[0] + ".txt", function () {
                     $(".owl-carousel").owlCarousel({
