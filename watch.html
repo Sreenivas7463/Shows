@@ -35,12 +35,12 @@
             position: absolute;
             top: 50%;
             color: #cdcbcd;
-           
+
         }
 
         .owl-nav i {
             font-size: 52px;
-            
+
         }
 
         .owl-nav .owl-prev {
@@ -85,7 +85,12 @@
 
     <script>
 
-        $("#ads").load("/ads/2zI7pkQ8g4w.txt", function () {
+        var urlv = window.location.hash.substr(1);
+        //alert(urlv);
+
+        const urla = urlv.split("&");
+
+        $("#ads").load("/ads/" + urla[0] + ".txt", function () {
             $(".owl-carousel").owlCarousel({
                 loop: true,
                 margin: 10,
@@ -111,10 +116,7 @@
 
         });
 
-        var urlv = window.location.hash.substr(1);
-        //alert(urlv);
 
-        const urla = urlv.split("&");
 
         var title = decodeURI(urla[1]);
 
