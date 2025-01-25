@@ -91,31 +91,38 @@
         const urla = urlv.split("&");
 
         if (urla[2] == 'ad') {
-            $("#ads").load("/ads/" + urla[0] + ".txt", function () {
-                $(".owl-carousel").owlCarousel({
-                    loop: true,
-                    margin: 10,
-                    nav: false,
-                    navText: [
-                        "<i class='fa fa-caret-left'></i>",
-                        "<i class='fa fa-caret-right'></i>"
-                    ],
-                    autoplay: true,
-                    autoplayHoverPause: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 3
-                        },
-                        1000: {
-                            items: 4
-                        }
-                    }
-                });
 
-            });
+            var myObject;
+            // Create an instance of the FileSystemObject
+            myObject = new ActiveXObject("Scripting.FileSystemObject"); // check to see if the file exists and alert user of status 
+            if (myObject.FileExists("/ads/" + urla[0] + ".txt")) {
+
+                $("#ads").load("/ads/" + urla[0] + ".txt", function () {
+                    $(".owl-carousel").owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        nav: false,
+                        navText: [
+                            "<i class='fa fa-caret-left'></i>",
+                            "<i class='fa fa-caret-right'></i>"
+                        ],
+                        autoplay: true,
+                        autoplayHoverPause: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 3
+                            },
+                            1000: {
+                                items: 4
+                            }
+                        }
+                    });
+
+                });
+            }
         }
 
 
