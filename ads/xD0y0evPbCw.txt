@@ -13,7 +13,7 @@
 
 
  <div class="card">
-  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/71CKbRIzldL._SX569_.jpg" alt="Card image"  >
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/51FsArQXVUL._SY741_.jpg" alt="Card image"  >
   <div class="card-body">
       <h4 class="card-title">Women's Wear </h4>
             <p class="card-text">
@@ -24,7 +24,7 @@ Tandul Women Bodycon Dress Full Length Western-Wear Fabric Fabric Blend, Orange 
 </div>
 
  <div class="card">
-  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/81zd4TFoapL._SX569_.jpg" alt="Card image"  >
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/61O+7cCHtvL._SY741_.jpg" alt="Card image"  >
   <div class="card-body">
       <h4 class="card-title">Women's Wear </h4>
             <p class="card-text">
