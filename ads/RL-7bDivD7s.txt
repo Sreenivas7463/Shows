@@ -1,0 +1,39 @@
+<div class="owl-carousel">
+    <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/61VADsoXPYL._SL1080_.jpg" alt="Card image"  >
+  <div class="card-body">
+    <h4 class="card-title">Perfora </h4>
+            <p class="card-text">Perfora Smart Water Dental Flosser - 300 ml Tank Capacity with 5 Modes & 5 Nozzles | 2 Year Warranty | Dental Flosser For Teethontrol I LCD Display I Make Bread at Home (1 Year Warranty)
+
+
+</p>
+    <a href="https://amzn.to/40FjXAH" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+
+ <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/614o4z3lt+L._SL1080_.jpg" alt="Card image"  >
+  <div class="card-body">
+      <h4 class="card-title">Perfora </h4>
+            <p class="card-text">
+Perfora Smart Water Dental Flosser - 300 ml Tank Capacity with 5 Modes & 5 Nozzles | 2 Year Warranty | Dental Flosser For Teethontrol I LCD Display I Make Bread at Home (1 Year Warranty)
+</p>
+    <a href="https://amzn.to/40FjXAH" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+ <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/51FVDPoY3yL._SL1080_.jpg" alt="Card image"  >
+  <div class="card-body">
+      <h4 class="card-title">Perfora </h4>
+            <p class="card-text">
+Perfora Smart Water Dental Flosser - 300 ml Tank Capacity with 5 Modes & 5 Nozzles | 2 Year Warranty | Dental Flosser For Teethontrol I LCD Display I Make Bread at Home (1 Year Warranty)
+
+</p>
+    <a href="https://amzn.to/40FjXAH" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+
+</div>
