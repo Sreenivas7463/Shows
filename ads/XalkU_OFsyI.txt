@@ -1,0 +1,34 @@
+<div class="owl-carousel">
+    <div class="card">
+  <img class="card-img-top  img-fluid" src="https://static.toiimg.com/thumb/msid-86990434,imgsize-113868,width-400,resizemode-4/86990434.jpg" alt="Card image"  >
+  <div class="card-body">
+    <h4 class="card-title">Amazon</h4>
+            <p class="card-text">Quick & Reliable Delivery — Prime Members can enjoy unlimited Free Shipping, early access to Lightning Deals and more. Explore deals on top categories like Electronics, Fashion & more on 
+</p>
+    <a href="https://amzn.to/3WKqZCK" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+
+ <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/0043953f-6f49-4f3b-9d25-c55ffac558e4.png" alt="Card image"  >
+  <div class="card-body">
+      <h4 class="card-title">Symbol Premium</h4>
+            <p class="card-text">Mangaldeep Scent 3 in 1 - with 3 Perfume Fragrances - Charcoal Free (213gm)ilt Watch Faces, 4GB Storage & AI Voice Assistant</p>
+    <a href="https://amzn.to/3Q3GTES" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+ <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/616UGmgUIkL._SL1080_.jpg" alt="Card image"  >
+  <div class="card-body">
+      <h4 class="card-title">Fiama</h4>
+            <p class="card-text">Fiama Men Deep Clean Gel Bar, With Charcoal, Grapefruit & Skin Conditioners, 500g (125g - Pack of 3+1),Skin Friendly pH, Soap for Men, For All Skin Types
+
+</p>
+    <a href="https://amzn.to/3PYGxiN" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+
+</div>
