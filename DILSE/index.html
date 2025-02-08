@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dilse</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Dilse" />
+    <meta name="description"
+        content="When Harsha comes to Hyderabad for his first job and has high hopes of working for a reputed software company, he initially struggles to cope with a series of funny and shocking revelations, which he scrapes through with his Boy Next Door charm by the end. " />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shows.pages.dev/DILSE" />
+    <meta property="og:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="og:description"
+        content="When Harsha comes to Hyderabad for his first job and has high hopes of working for a reputed software company, he initially struggles to cope with a series of funny and shocking revelations, which he scrapes through with his Boy Next Door charm by the end. " />
+    <meta property="og:image"
+        content="https://etv-win-image.akamaized.net/etvwin/exclusives/shows69756/dil-se/images/dil-se-768x432.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://shows.pages.dev/DILSE" />
+    <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="twitter:description"
+        content="When Harsha comes to Hyderabad for his first job and has high hopes of working for a reputed software company, he initially struggles to cope with a series of funny and shocking revelations, which he scrapes through with his Boy Next Door charm by the end. " />
+    <meta property="twitter:image"
+        content="https://etv-win-image.akamaized.net/etvwin/exclusives/shows69756/dil-se/images/dil-se-768x432.jpg" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>Dilse</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <ul>
+                <li><a class="glightbox" rel="popover"
+                        data-img="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/dilse/subcategories/season1/episodes/dilseep01/60361/dilse-ep-01-DILSE_EP_01-768x432.jpg"
+                        href="DILSE_EP_01">DILSE_EP_01</a></li>
+                <li><a class="glightbox" rel="popover"
+                        data-img="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/dilse/subcategories/season1/episodes/dilseep01/60361/dilse-ep-01-DILSE_EP_01-768x432.jpg"
+                        href="DILSE_EP_02">DILSE_EP_02</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+
+
+        var lightbox = GLightbox({
+            //height: '100vh', These options seem to have no effect.
+            //width: 'auto',
+            loop: true
+        });
+
+        $(document).ready(function () {
+            if (jQuery) {
+                $('a[rel=popover]').popover({
+                    html: true,
+                    trigger: 'hover',
+                    placement: 'bottom',
+                    content: function () { return '<img width="200px" height="140px" src="' + $(this).data('img') + '" />'; }
+                });
+            } else {
+                // jQuery is not loaded
+                alert("Doesn't Work");
+            }
+        });
+
+
+
+    </script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "baee8c1ded0c4180be5d02698f41fbe6"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</body>
+
+</html>
