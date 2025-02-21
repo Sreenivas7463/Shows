@@ -67,8 +67,7 @@
                 <h2 class="text-center" id="titled"></h2>
                 <video controls crossorigin playsinline
                     poster="https://etv-win-image.akamaized.net/etvwin/telugumovies/bodyguard/59258/body-guard-Body_Guard_Movie-768x432.jpg">
-                    <source type="application/x-mpegURL"
-                        src="https://etvwin-s3.akamaized.net/679ddd8c55d8473ed3f827e3/FHD_playlist.m3u8">
+                    <source type="application/x-mpegURL" src="">
 
                 </video>
             </div>
@@ -88,7 +87,7 @@
             const video = document.querySelector("video");
 
             document.getElementById('titled').innerHTML = "Bodyguard";
-            const source = video.getElementsByTagName("source")[0].src = "https://etvwin-s3.akamaized.net/67a7449455d8473ed3f8283f/FHD_playlist.m3u8";
+            const source = video.getElementsByTagName("source")[0].src = "https://etvwin-s3.akamaized.net/679ddd8c55d8473ed3f827e3/FHD_playlist.m3u8";
             //alert(source);
             // For more options see: https://github.com/sampotts/plyr/#options
             // captions.update is required for captions to work with hls.js
