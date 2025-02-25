@@ -2,8 +2,8 @@
     <div class="card">
   <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/71GRAzMlsZL._SL1500_.jpg" alt="Card image"  >
   <div class="card-body">
-    <h4 class="card-title">Amazon</h4>
-            <p class="card-text">Quick & Reliable Delivery — Prime Members can enjoy unlimited Free Shipping, early access to Lightning Deals and more. Explore deals on top categories like Electronics, Fashion & more on 
+    <h4 class="card-title">Noise Master Buds</h4>
+            <p class="card-text">Noise Master Buds, Sound by Bose in-Ear Bluetooth Earbuds, Up to 49dB Adaptive ANC, LHDC 5.0, Immersive Spatial Audio, 44H Playtime with 6 mic ENC, Dual Pairing, IPX5 Ear Buds TWS (Titanium)
 </p>
     <a href="https://amzn.to/4kpBkhY" class="btn btn-warning" target="_blank">View Product</a>
   </div>
@@ -15,18 +15,17 @@
   <div class="card-body">
       <h4 class="card-title">Noise Master Buds</h4>
             <p class="card-text">Noise Master Buds, Sound by Bose in-Ear Bluetooth Earbuds, Up to 49dB Adaptive ANC, LHDC 5.0, Immersive Spatial Audio, 44H Play</p>
-    <a href="https://amzn.to/3Q3GTES" class="btn btn-warning" target="_blank">View Product</a>
+    <a href="https://amzn.to/4kpBkhY" class="btn btn-warning" target="_blank">View Product</a>
   </div>
 </div>
 
  <div class="card">
   <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/61FFXIRyMZL._SL1500_.jpg" alt="Card image"  >
   <div class="card-body">
-      <h4 class="card-title">Fiama</h4>
-            <p class="card-text">Fiama Men Deep Clean Gel Bar, With Charcoal, Grapefruit & Skin Conditioners, 500g (125g - Pack of 3+1),Skin Friendly pH, Soap for Men, For All Skin Types
-
+      <h4 class="card-title">Noise Master Buds</h4>
+            <p class="card-text">Noise Master Buds, Sound by Bose in-Ear Bluetooth Earbuds, Up to 49dB Adaptive ANC, LHDC 5.0, Immersive Spatial Audio, 44H Playtime with 6 mic ENC, Dual Pairing, IPX5 Ear Buds TWS (Titanium)
 </p>
-    <a href="https://amzn.to/3PYGxiN" class="btn btn-warning" target="_blank">View Product</a>
+    <a href="https://amzn.to/4kpBkhY" class="btn btn-warning" target="_blank">View Product</a>
   </div>
 </div>
 
