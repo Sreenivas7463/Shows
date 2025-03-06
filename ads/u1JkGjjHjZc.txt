@@ -1,6 +1,6 @@
 <div class="owl-carousel">
     <div class="card">
-  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/61VADsoXPYL._SL1080_.jpg" alt="Card image"  >
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/61bzdsrqQ-L._SL1500_.jpg" alt="Card image"  >
   <div class="card-body">
     <h4 class="card-title">DREAME </h4>
             <p class="card-text">DREAME L10s Ultra Robot Vacuum Cleaner Washer with Self-Cleaning Base Station (Dust Drain, Automatic Cleaning) AI Obstacle Detection 3D, 5300Pa Suction Power, 210 Minutes Battery, WiFi/APP/Alexa
@@ -13,7 +13,7 @@
 
 
  <div class="card">
-  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/614o4z3lt+L._SL1080_.jpg" alt="Card image"  >
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/61wmGqKn5XL._SL1500_.jpg" alt="Card image"  >
   <div class="card-body">
       <h4 class="card-title">DREAME </h4>
             <p class="card-text">
@@ -25,7 +25,7 @@ DREAME L10s Ultra Robot Vacuum Cleaner Washer with Self-Cleaning Base Station (D
 </div>
 
  <div class="card">
-  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/51FVDPoY3yL._SL1080_.jpg" alt="Card image"  >
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/71UBJCM+maL._SL1500_.jpg" alt="Card image"  >
   <div class="card-body">
       <h4 class="card-title">DREAME </h4>
             <p class="card-text">
