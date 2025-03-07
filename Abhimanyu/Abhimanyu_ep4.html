@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Abhimanyu EP-4 </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta name="title" content="Abhimanyu EP-4">
+    <meta name="description"
+        content="Following the footprints of lost Potol, the group discovers a game of Snake & Ladder. Gupshup tries to roll the dice and in turn is sucked into the game. To save their friend, Abhimanyu & Falak decides to enter the game. They have to participate in a real life Snake & Ladder game to come out safe. How will Abhimanyu save himself and his friends?">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shows.pages.dev/Abhimanyu">
+    <meta property="og:title" content="Abhimanyu EP-4">
+    <meta property="og:description"
+        content="Following the footprints of lost Potol, the group discovers a game of Snake & Ladder. Gupshup tries to roll the dice and in turn is sucked into the game. To save their friend, Abhimanyu & Falak decides to enter the game. They have to participate in a real life Snake & Ladder game to come out safe. How will Abhimanyu save himself and his friends?">
+    <meta property="og:image"
+        content="https://etv-win-image.akamaized.net/etvwin/kids/shows/abhimanyu/subcategories/season1/episodes/epi5/66107/epi-5-AMU_EP_05-768x432.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shows.pages.dev/Abhimanyu">
+    <meta property="twitter:title" content="Abhimanyu EP-4">
+    <meta property="twitter:description"
+        content="Following the footprints of lost Potol, the group discovers a game of Snake & Ladder. Gupshup tries to roll the dice and in turn is sucked into the game. To save their friend, Abhimanyu & Falak decides to enter the game. They have to participate in a real life Snake & Ladder game to come out safe. How will Abhimanyu save himself and his friends?">
+    <meta property="twitter:image"
+        content="https://etv-win-image.akamaized.net/etvwin/kids/shows/abhimanyu/subcategories/season1/episodes/epi5/66107/epi-5-AMU_EP_05-768x432.jpg">
+
+    <link rel="shortcut icon" href="https://www.etvwin.com/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+    <style type="text/css">
+        .container {
+            padding-top: 18vh;
+            margin: 20px auto;
+
+        }
+
+        video {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1 id="titled">ETV </h1>
+        <p>Watch 'N' Enjoy</p>
+    </div>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <video controls crossorigin playsinline
+                    poster="https://etv-win-image.akamaized.net/etvwin/kids/shows/abhimanyu/subcategories/season1/episodes/epi5/66107/epi-5-AMU_EP_05-768x432.jpg">
+                    <source type="application/x-mpegURL"
+                        src="https://etvwin-s3.akamaized.net/64061752b64c2f0fd89626fd/4K_playlist.m3u8">
+                </video>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+    <script src="https://unpkg.com/plyr@3.6.8/dist/plyr.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const video = document.querySelector("video");
+            var urlv = window.location.hash.substr(1);
+
+
+            //alert(urlv);
+            const urla = urlv.split("&");
+            document.getElementById('titled').innerHTML = "Abhimanyu - EP-4";
+            const source = video.getElementsByTagName("source")[0].src = "https://etvwin-s3.akamaized.net/6790aefdc7036a0cfa096fdc/FHD_playlist.m3u8";
+            //alert(source);
+            // For more options see: https://github.com/sampotts/plyr/#options
+            // captions.update is required for captions to work with hls.js
+            const defaultOptions = {};
+
+            if (Hls.isSupported()) {
+                // For more Hls.js options, see https://github.com/dailymotion/hls.js
+                const hls = new Hls();
+                hls.loadSource(source);
+
+                // From the m3u8 playlist, hls parses the manifest and returns
+                // all available video qualities. This is important, in this approach,
+                // we will have one source on the Plyr player.
+                hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+
+                    // Transform available levels into an array of integers (height values).
+                    const availableQualities = hls.levels.map((l) => l.height)
+
+                    // Add new qualities to option
+                    defaultOptions.quality = {
+                        default: availableQualities[0],
+                        options: availableQualities,
+                        // this ensures Plyr to use Hls to update quality level
+                        forced: true,
+                        onChange: (e) => updateQuality(e),
+                    }
+
+                    // Initialize here
+                    const player = new Plyr(video, defaultOptions);
+                });
+                hls.attachMedia(video);
+                window.hls = hls;
+            } else {
+                // default options with no quality update in case Hls is not supported
+                const player = new Plyr(video, defaultOptions);
+            }
+
+            function updateQuality(newQuality) {
+                window.hls.levels.forEach((level, levelIndex) => {
+                    if (level.height === newQuality) {
+                        console.log("Found quality match with " + newQuality);
+                        window.hls.currentLevel = levelIndex;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
