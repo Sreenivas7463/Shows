@@ -47,15 +47,16 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
+                <div class="plyr__audio-selector-container mb-1">
+                    <label for="audioTracks">Audio Track:</label>
+                    <select id="audioTracks" class="plyr-custom-select">
+                    </select>
+                </div>
                 <video controls crossorigin playsinline poster="">
                     <source type="application/x-mpegURL"
                         src="https://etvwin-s3.akamaized.net/64061752b64c2f0fd89626fd/4K_playlist.m3u8">
                 </video>
-                <div class="plyr__audio-selector-container">
-                    <label for="audioTracks">Audio Track:</label>
-                    <select id="audioTracks" class="plyr-custom-select form-select">
-                    </select>
-                </div>
+
             </div>
             <div class="col-md-2"></div>
         </div>
