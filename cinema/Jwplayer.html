@@ -814,9 +814,8 @@ Icone de Share.
             width: '100%',
             mute: true,
             controls: true, // Ensure controls are enabled
-            controlbar: {
-                items: ['play', 'progress', 'current', 'duration', 'mute', 'volume', 'captions', 'fullscreen', 'forward'] // Add 'forward'
-            }
+            playbackRateControls: true, // Enable playback rate controls
+            playbackRates: [0.5, 0.75, 1, 1.25, 1.5, 2], // Define available playback rates
         });
     </script>
 </body>
