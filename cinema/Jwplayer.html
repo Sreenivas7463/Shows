@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JW Player</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>JW Player</h1>
+                <div id="player"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://content.jwplatform.com/libraries/oH2wJDod.js"></script>
+    <script>
+        var playerInstance = jwplayer("player");
+        playerInstance.setup({
+            playlist: [{
+                sources: [{
+                    file: "https://shows.pages.dev/movies/KungFuPanda-4.m3u8",
+                    type: "hls"
+                }],
+                image: "https://imgcdn.media/pv/1920/0HTML9QCR3TOKEQ0PM1CV40T07.jpg",
+                title: "JW Player Support Demo",
+                description: "An example video embed."
+            }],
+            aspectratio: "16:9",
+            width: '100%',
+            mute: true
+        });
+    </script>
+</body>
+
+</html>
