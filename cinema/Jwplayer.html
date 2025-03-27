@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row mt-3">
             <div class="col-md-8 mx-auto">
 
                 <div id="player"></div>
@@ -26,15 +26,21 @@
     <script src="https://content.jwplatform.com/libraries/oH2wJDod.js"></script>
     <script>
         var playerInstance = jwplayer("player");
+
+        var urlv = window.location.hash.substr(1);
+
+
+        //alert(urlv);
+        const urla = urlv.split("&");
         playerInstance.setup({
             playlist: [{
                 sources: [{
-                    file: "https://shows.pages.dev/movies/KungFuPanda-4.m3u8",
+                    file: "https://shows.pages.dev/movies/" + urla[0] + ".m3u8",
                     type: "hls"
                 }],
-                image: "https://imgcdn.media/pv/1920/0HTML9QCR3TOKEQ0PM1CV40T07.jpg",
-                title: "JW Player Support Demo",
-                description: "An example video embed."
+                image: "https://imgcdn.media/pv/1920/" + urla[1] + ".jpg",
+                title: urla[0],
+                description: ""
             }],
             aspectratio: "16:9",
             width: '100%',
