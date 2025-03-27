@@ -812,7 +812,11 @@ Icone de Share.
             },
             aspectratio: "16:9",
             width: '100%',
-            mute: true
+            mute: true,
+            controls: true, // Ensure controls are enabled
+            controlbar: {
+                items: ['play', 'progress', 'current', 'duration', 'mute', 'volume', 'captions', 'fullscreen', 'forward'] // Add 'forward'
+            }
         });
     </script>
 </body>
