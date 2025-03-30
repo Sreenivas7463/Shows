@@ -797,13 +797,20 @@ Icone de Share.
 
         //alert(urlv);
         const urla = urlv.split("&");
+        if (urla[2] == 'c') {
+            var poster0 = 'https://imgcdn.media/pv/c/' + urla[1] + '.jpg';
+        }
+        else {
+            var poster0 = 'https://imgcdn.media/pv/1920/' + urla[1] + '.jpg';
+        }
+
         playerInstance.setup({
             playlist: [{
                 sources: [{
                     file: "https://shows.pages.dev/movies/" + urla[0] + ".m3u8",
                     type: "hls"
                 }],
-                image: "https://imgcdn.media/pv/1920/" + urla[1] + ".jpg",
+                image: poster0,
                 title: urla[0],
                 description: ""
             }],
