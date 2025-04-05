@@ -1,0 +1,39 @@
+<div class="owl-carousel">
+    <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/51CKvHy2rOL._SL1500_.jpg" alt="Card image"  >
+  <div class="card-body">
+    <h4 class="card-title">REDUCK 4000mAh Double Ended Spray Fan </h4>
+            <p class="card-text">REDUCK 4000mAh Double Ended Spray Fan, Cold Air Fan, 2025 New 3 Gears USB Rechargeable Oscillating fan with LED Light Cooler Fan, Push Button& Remote Control,280ml Water Tank, Ice Filling Fan (White)
+
+
+</p>
+    <a href="https://amzn.to/3XIl3Lm" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+
+ <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/41Q9Yj1WIrL.jpg" alt="Card image"  >
+  <div class="card-body">
+      <h4 class="card-title">REDUCK 4000mAh Double Ended Spray Fan </h4>
+            <p class="card-text">
+REDUCK 4000mAh Double Ended Spray Fan, Cold Air Fan, 2025 New 3 Gears USB Rechargeable Oscillating fan with LED Light Cooler Fan, Push Button& Remote Control,280ml Water Tank, Ice Filling Fan (White)
+</p>
+    <a href="https://amzn.to/3XIl3Lm" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+ <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/71QlE1UYPwL._SL1500_.jpg" alt="Card image"  >
+  <div class="card-body">
+      <h4 class="card-title">REDUCK 4000mAh Double Ended Spray Fan </h4>
+            <p class="card-text">
+REDUCK 4000mAh Double Ended Spray Fan, Cold Air Fan, 2025 New 3 Gears USB Rechargeable Oscillating fan with LED Light Cooler Fan, Push Button& Remote Control,280ml Water Tank, Ice Filling Fan (White)
+
+</p>
+    <a href="https://amzn.to/3XIl3Lm" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+
+</div>
