@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NDTV 24x7</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://www.etvwin.com/favicon.ico" />
+    <meta name="title" content="ETV_Telugu_HD">
+    <meta name="description"
+        content="Watch Live English News Channel NDTV 24X7, Live News on NDTV, News at Noon. We are broadcasting your favorite news channel all over the world for free, covering news, movies, music, sports, lifestyle and more on NDTV.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shows.pages.dev/NDTV">
+    <meta property="og:title" content="ndtv24x7">
+    <meta property="og:description"
+        content="Watch Live English News Channel NDTV 24X7, Live News on NDTV, News at Noon. We are broadcasting your favorite news channel all over the world for free, covering news, movies, music, sports, lifestyle and more on NDTV.com">
+    <meta property="og:image" content="https://logodix.com/logo/2131942.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shows.pages.dev/NDTV">
+    <meta property="twitter:title" content="ndtv24x7">
+    <meta property="twitter:description"
+        content="Watch Live English News Channel NDTV 24X7, Live News on NDTV, News at Noon. We are broadcasting your favorite news channel all over the world for free, covering news, movies, music, sports, lifestyle and more on NDTV.com">
+    <meta property="twitter:image" content="https://logodix.com/logo/2131942.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+    <style type="text/css">
+        .container {
+            padding-top: 2vh;
+            margin: 20px auto;
+
+        }
+
+        video {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1 id="titled"> </h1>
+        <p>Watch 'N' Enjoy</p>
+    </div>
+
+    <div class="container">
+        <div class="row py-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="https://amzn.to/4gQmrCm" target="_blank" title="Have a Cool Cool Summer">
+                            <img src="../img/71al+OvlvkL._SL1502_.jpg" class="card-img-top"
+                                title="Have a Cool Cool Summer" alt="Have a Cool Cool Summer">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <video controls crossorigin playsinline poster="">
+                    <source type="application/x-mpegURL"
+                        src="https://etvwin-s3.akamaized.net/64061752b64c2f0fd89626fd/4K_playlist.m3u8">
+                </video>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const video = document.querySelector("video");
+
+            document.getElementById('titled').innerHTML = 'NDTV 24X7';
+
+
+            var poster0 = 'https://logodix.com/logo/2131942.png';
+
+
+
+
+            video.setAttribute("poster", poster0);
+
+            const source = video.getElementsByTagName("source")[0].src = "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8";
+            //alert(source);
+            // For more options see: https://github.com/sampotts/plyr/#options
+            // captions.update is required for captions to work with hls.js
+            const defaultOptions = {};
+
+            if (Hls.isSupported()) {
+                // For more Hls.js options, see https://github.com/dailymotion/hls.js
+                const hls = new Hls();
+                hls.loadSource(source);
+
+                // From the m3u8 playlist, hls parses the manifest and returns
+                // all available video qualities. This is important, in this approach,
+                // we will have one source on the Plyr player.
+                hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+
+                    // Transform available levels into an array of integers (height values).
+                    const availableQualities = hls.levels.map((l) => l.height)
+
+                    // Add new qualities to option
+                    defaultOptions.quality = {
+                        default: availableQualities[0],
+                        options: availableQualities,
+                        // this ensures Plyr to use Hls to update quality level
+                        forced: true,
+                        onChange: (e) => updateQuality(e),
+                    }
+
+                    // Initialize here
+                    const player = new Plyr(video, defaultOptions);
+                });
+                hls.attachMedia(video);
+                window.hls = hls;
+            } else {
+                // default options with no quality update in case Hls is not supported
+                const player = new Plyr(video, defaultOptions);
+            }
+
+            function updateQuality(newQuality) {
+                window.hls.levels.forEach((level, levelIndex) => {
+                    if (level.height === newQuality) {
+                        console.log("Found quality match with " + newQuality);
+                        window.hls.currentLevel = levelIndex;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
