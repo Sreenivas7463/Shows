@@ -76,14 +76,26 @@
         const dashPlayer = dashjs.MediaPlayer().create();
 
         const posterUrl = "https://m.media-amazon.com/images/S/pv-target-images/3b3afafc8cb07051d3055a80eb37590b2772be31ceefb4113ad9b8c0ad0e665a.jpg"; // Replace with your poster URL
+        videoElement.setAttribute("poster", posterUrl);
         // Initialize dash.js with autoplay set to false
         dashPlayer.initialize(videoElement, url, false);
 
         // Step 2: Initialize Plyr
         const plyrPlayer = new Plyr(videoElement, {
-            controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
-            autoplay: false, // Ensure Plyr doesn't override dash.js settings
-            poster: posterUrl // Alternative way to set poster
+            controls: [
+                'play',          // Play/pause button
+                'progress',      // Progress bar
+                'current-time',  // Current time display
+                'mute',          // Mute button
+                'volume',        // Volume control
+                'speed',         // Speed control (added here)
+                'fullscreen'     // Fullscreen button
+            ],
+            speed: {
+                selected: 1,       // Default speed (1x)
+                options: [0.5, 0.75, 1, 1.25, 1.5, 2] // Available speed options
+            },
+            autoplay: false // Ensure no autoplay
         });
     </script>
 
