@@ -23,15 +23,15 @@
       <SegmentTemplate timescale="48000" duration="192000" startNumber="1"/>
       <Label>Telugu</Label>
       <Representation id="15" bandwidth="64000" audioSamplingRate="48000" codecs="mp4a.40.2">
-        <SegmentTemplate media="premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_64Kbps_te_IN_$Number%09d$.cmfa" initialization="premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_64Kbps_te_INinit.cmfa" duration="192000" startNumber="1"/>
+        <SegmentTemplate media="https://d3s0ximcru5bdx.cloudfront.net/premiereavod-mygirl-s1e1-ftv2025-1733975607016/dash/VP9/premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_64Kbps_te_IN_$Number%09d$.cmfa" initialization="premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_64Kbps_te_INinit.cmfa" duration="192000" startNumber="1"/>
         <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
       </Representation>
       <Representation id="16" bandwidth="96000" audioSamplingRate="48000" codecs="mp4a.40.2">
-        <SegmentTemplate media="premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_96Kbps_te_IN_$Number%09d$.cmfa" initialization="premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_96Kbps_te_INinit.cmfa" duration="192000" startNumber="1"/>
+        <SegmentTemplate media="https://d3s0ximcru5bdx.cloudfront.net/premiereavod-mygirl-s1e1-ftv2025-1733975607016/dash/VP9/premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_96Kbps_te_IN_$Number%09d$.cmfa" initialization="premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_96Kbps_te_INinit.cmfa" duration="192000" startNumber="1"/>
         <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
       </Representation>
       <Representation id="17" bandwidth="128000" audioSamplingRate="48000" codecs="mp4a.40.2">
-        <SegmentTemplate media="premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_128Kbps_te_IN_$Number%09d$.cmfa" initialization="premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_128Kbps_te_INinit.cmfa" duration="192000" startNumber="1"/>
+        <SegmentTemplate media="https://d3s0ximcru5bdx.cloudfront.net/premiereavod-mygirl-s1e1-ftv2025-1733975607016/dash/VP9/premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_128Kbps_te_IN_$Number%09d$.cmfa" initialization="premiereavod_premiereavod-mygirl-s1e1-ftv2025aac_aud_128Kbps_te_INinit.cmfa" duration="192000" startNumber="1"/>
         <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
       </Representation>
     </AdaptationSet>
