@@ -56,9 +56,7 @@
         <div class="row">
             <h3 class="text-center">Coolie No.1</h3>
             <div class="col-md-8 mx-auto">
-                <video preload="none" id="player"
-                    poster="https://m.media-amazon.com/images/S/pv-target-images/3b3afafc8cb07051d3055a80eb37590b2772be31ceefb4113ad9b8c0ad0e665a.jpg"
-                    controls crossorigin>
+                <video preload="none" id="player" poster="" controls crossorigin>
                 </video>
             </div>
         </div>
@@ -80,6 +78,9 @@
             const player = new Plyr(video);
             // Expose player so it can be used from the console
             window.player = player;
+
+            var poster = "https://m.media-amazon.com/images/S/pv-target-images/3b3afafc8cb07051d3055a80eb37590b2772be31ceefb4113ad9b8c0ad0e665a.jpg";
+            video.setAttribute('poster', poster);
 
             // For more Shaka Player options, see: https://github.com/google/shaka-player
             if (shaka.Player.isBrowserSupported()) {
