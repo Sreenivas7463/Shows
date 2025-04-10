@@ -5,6 +5,27 @@
     <title>Coolie No.1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Coolie No.1">
+    <meta name="description"
+        content="After being insulted by a rich businessman named Rosario, pandit Jai Kishen teaches him a lesson by getting his daughter married to Raju - a Coolie posing as a millionaire. Soon Raju’s real indentity is exposed but he cooks up a story of having a filthy rich twin. One lie leads to another and things start to go out of hand.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shows.pages.dev/">
+    <meta property="og:title" content="Coolie No.1">
+    <meta property="og:description"
+        content="After being insulted by a rich businessman named Rosario, pandit Jai Kishen teaches him a lesson by getting his daughter married to Raju - a Coolie posing as a millionaire. Soon Raju’s real indentity is exposed but he cooks up a story of having a filthy rich twin. One lie leads to another and things start to go out of hand.">
+    <meta property="og:image"
+        content="https://m.media-amazon.com/images/S/pv-target-images/3b3afafc8cb07051d3055a80eb37590b2772be31ceefb4113ad9b8c0ad0e665a.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shows.pages.dev/">
+    <meta property="twitter:title" content="CDN_04Jun24_EP_01">
+    <meta property="twitter:description"
+        content="After being insulted by a rich businessman named Rosario, pandit Jai Kishen teaches him a lesson by getting his daughter married to Raju - a Coolie posing as a millionaire. Soon Raju’s real indentity is exposed but he cooks up a story of having a filthy rich twin. One lie leads to another and things start to go out of hand.">
+    <meta property="twitter:image"
+        content="https://m.media-amazon.com/images/S/pv-target-images/3b3afafc8cb07051d3055a80eb37590b2772be31ceefb4113ad9b8c0ad0e665a.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Load Plyr CSS -->
@@ -35,9 +56,7 @@
         <div class="row">
             <h3 class="text-center">Coolie No.1</h3>
             <div class="col-md-8 mx-auto">
-                <video preload="none" id="player"
-                    poster="https://m.media-amazon.com/images/S/pv-target-images/3b3afafc8cb07051d3055a80eb37590b2772be31ceefb4113ad9b8c0ad0e665a.jpg"
-                    controls crossorigin>
+                <video preload="none" id="player" controls crossorigin>
                 </video>
             </div>
         </div>
@@ -56,13 +75,15 @@
         const videoElement = document.getElementById("player");
         const dashPlayer = dashjs.MediaPlayer().create();
 
+        const posterUrl = "https://m.media-amazon.com/images/S/pv-target-images/3b3afafc8cb07051d3055a80eb37590b2772be31ceefb4113ad9b8c0ad0e665a.jpg"; // Replace with your poster URL
         // Initialize dash.js with autoplay set to false
         dashPlayer.initialize(videoElement, url, false);
 
         // Step 2: Initialize Plyr
         const plyrPlayer = new Plyr(videoElement, {
             controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
-            autoplay: false // Ensure Plyr doesn't override dash.js settings
+            autoplay: false, // Ensure Plyr doesn't override dash.js settings
+            poster: posterUrl // Alternative way to set poster
         });
     </script>
 
