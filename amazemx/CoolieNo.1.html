@@ -70,21 +70,44 @@
 
     <script>
 
-        (function () {
-            var mpd = "https://d3s0ximcru5bdx.cloudfront.net/CN1_GL_2020-Full-Mezz_UHD-hi-IN-R2-1731434534452/cmaf/H_264/CN1_GL_2020-Full-Mezz_UHD-hi-IN-R2/poojaent-PE_CN1_GL_2020-Full-Mezz_UHD-hi-IN-R2.mpd",
-                dash = dashjs.MediaPlayer().create(),
-                video = document.querySelector('#player');
+        // Step 1: Get the video element
+        const videoElement = document.getElementById("player");
 
-            const posterUrl = "https://m.media-amazon.com/images/S/pv-target-images/3b3afafc8cb07051d3055a80eb37590b2772be31ceefb4113ad9b8c0ad0e665a.jpg"; // Replace with your poster URL
-            video.setAttribute("poster", posterUrl);
+        // Step 2: Set the poster image dynamically
+        const posterUrl = "https://m.media-amazon.com/images/S/pv-target-images/3b3afafc8cb07051d3055a80eb37590b2772be31ceefb4113ad9b8c0ad0e665a.jpg"; // Replace with your poster URL
+        videoElement.setAttribute("poster", posterUrl);
 
+        // Step 3: Initialize Plyr first (no dash.js yet)
+        const plyrPlayer = new Plyr(videoElement, {
+            controls: [
+                'play',          // Play/pause button
+                'progress',      // Progress bar
+                'current-time',  // Current time display
+                'mute',          // Mute button
+                'volume',        // Volume control
+                'speed',         // Speed control (triggers settings cog)
+                'fullscreen'     // Fullscreen button
+            ],
+            speed: {
+                selected: 1,       // Default speed (1x)
+                options: [0.5, 0.75, 1, 1.25, 1.5, 2] // Available speed options
+            },
+            autoplay: false,     // Ensure no autoplay
+            poster: posterUrl    // Reinforce poster in Plyr
+        });
 
-            dash.initialize(video, mpd, false);
+        // Step 4: Initialize dash.js only on play
+        const url = "https://d3s0ximcru5bdx.cloudfront.net/CN1_GL_2020-Full-Mezz_UHD-hi-IN-R2-1731434534452/cmaf/H_264/CN1_GL_2020-Full-Mezz_UHD-hi-IN-R2/poojaent-PE_CN1_GL_2020-Full-Mezz_UHD-hi-IN-R2.mpd"; // Example DASH stream
+        let dashPlayer = null;
+        let isDashInitialized = false;
 
-            plyr.setup(video);
-        })();
-
-
+        plyrPlayer.on('play', () => {
+            if (!isDashInitialized) {
+                dashPlayer = dashjs.MediaPlayer().create();
+                dashPlayer.initialize(videoElement, url, true); // Autoplay true here since user clicked play
+                isDashInitialized = true;
+            }
+        });
 
 
     </script>
