@@ -50,10 +50,12 @@
             var title = urla[1];
             document.getElementById('titled').innerHTML = 'Twitter - ' + decodeURI(title);
             // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
-            const player = new Plyr('#player');
+            const player = new Plyr('#player', {
+                loop: { active: true }, // Enable looping from the start
+            });
 
             player.source = {
-                loop: { active: true },
+
                 type: 'video',
                 sources: [
                     {
