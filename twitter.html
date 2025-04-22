@@ -55,9 +55,11 @@
             if (urla[4] == 'a') {
                 var xy = 'amplify_video';
                 var za = 'vid/avc1';
+                var imgv = 'img';
             } else if (urla[4] == 'e') {
                 var xy = 'ext_tw_video';
                 var za = 'pu/vid/avc1';
+                var imgv = 'pu/img';
             }
             //alert('https://video.twimg.com/' + xy + '/' + vidid + '/' + za + '/' + size + '/' + vididv + '.mp4');
             //alert('https://pbs.twimg.com/' + xy + '_thumb/' + vidid + '/img/' + imgt + '.jpg');
@@ -76,7 +78,7 @@
                         type: 'video/mp4',
                     },
                 ],
-                poster: 'https://pbs.twimg.com/' + xy + '_thumb/' + vidid + '/img/' + imgt + '.jpg',
+                poster: 'https://pbs.twimg.com/' + xy + '_thumb/' + vidid + '/' + imgv + '/' + imgt + '.jpg',
             };
 
 
