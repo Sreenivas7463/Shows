@@ -24,9 +24,11 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h3 class="text-center my-1" id="titled">Video Player</h3>
-                <img src="" class="img-fluid rounded" id="imgd" data-title="Twitter Pic" data-description=""
-                    data-desc-position="right" data-type="image" data-effect="fade" data-width="900px"
-                    data-height="auto" data-zoomable="true" data-draggable="true" />
+                <a href="" id="imga" data-title="Twitter Pic" data-description="" data-desc-position="right"
+                    data-type="image" data-effect="fade" data-width="900px" data-height="auto" data-zoomable="true"
+                    data-draggable="true">
+                    <img src="" class="img-fluid rounded" id="imgd" />
+                </a>
             </div>
         </div>
     </div>
@@ -47,6 +49,7 @@
             //alert('https://video.twimg.com/' + xy + '/' + vidid + '/' + za + '/' + size + '/' + vididv + '.mp4');
             //alert('https://pbs.twimg.com/' + xy + '_thumb/' + vidid + '/img/' + imgt + '.jpg');
             document.getElementById('titled').innerHTML = 'Twitter - ' + decodeURI(title);
+            document.getElementById('imga').href = 'https://pbs.twimg.com/media/' + imgid + '?format=jpg&name=' + large + '';
             document.getElementById('imgd').src = 'https://pbs.twimg.com/media/' + imgid + '?format=jpg&name=' + large + '';
 
 
