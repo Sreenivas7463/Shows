@@ -37,23 +37,22 @@
 
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', () => {
 
-            var urlv = window.location.hash.substr(1);
+        var urlv = window.location.hash.substr(1);
 
-            const urla = urlv.split("&");
-            var imgid = urla[0];
-            var large = urla[1];
-            var title = urla[2];
+        const urla = urlv.split("&");
+        var imgid = urla[0];
+        var large = urla[1];
+        var title = urla[2];
 
-            //alert('https://video.twimg.com/' + xy + '/' + vidid + '/' + za + '/' + size + '/' + vididv + '.mp4');
-            //alert('https://pbs.twimg.com/' + xy + '_thumb/' + vidid + '/img/' + imgt + '.jpg');
-            document.getElementById('titled').innerHTML = 'Twitter - ' + decodeURI(title);
-            document.getElementById('imga').href = 'https://pbs.twimg.com/media/' + imgid + '?format=jpg&name=' + large + '';
-            document.getElementById('imgd').src = 'https://pbs.twimg.com/media/' + imgid + '?format=jpg&name=' + large + '';
+        //alert('https://video.twimg.com/' + xy + '/' + vidid + '/' + za + '/' + size + '/' + vididv + '.mp4');
+        //alert('https://pbs.twimg.com/' + xy + '_thumb/' + vidid + '/img/' + imgt + '.jpg');
+        document.getElementById('titled').innerHTML = 'Twitter - ' + decodeURI(title);
+        document.getElementById('imga').href = 'https://pbs.twimg.com/media/' + imgid + '?format=jpg&name=' + large + '';
+        document.getElementById('imgd').src = 'https://pbs.twimg.com/media/' + imgid + '?format=jpg&name=' + large + '';
 
 
-        });
+
     </script>
     <script type="text/javascript">
         const lightbox = GLightbox();
