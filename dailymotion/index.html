@@ -32,7 +32,11 @@
             var urlv = window.location.hash.substr(1);
             //alert(urlv);
             const urla = urlv.split("&");
-            document.getElementById('titled').innerHTML = 'Dailymotion - ' + urla[1];
+
+            let encoded = encodeURIComponent(urla[1]);
+            let decoded = decodeURIComponent(encoded);
+
+            document.getElementById('titled').innerHTML = 'Dailymotion - ' + decoded;
 
             document.getElementById("frame").src = "https://geo.dailymotion.com/player.html?video=" + urla[0];
 
