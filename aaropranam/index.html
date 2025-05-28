@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <title>Aaropranam</title>
+    <meta name="title" content="Aaropranam" />
+    <meta name="description"
+        content="Ranamma prays god to show her family a she feel lonely without her family. What if Priya learns the true relationship between her and Ranamma?" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shows.pages.dev/aaropranam/" />
+    <meta property="og:title" content="Aaropranam" />
+    <meta property="og:description"
+        content="Ranamma prays god to show her family a she feel lonely without her family. What if Priya learns the true relationship between her and Ranamma?" />
+    <meta property="og:image"
+        content="https://etv-win-image.akamaized.net/etvwin/serials/shows67883/aaro-pranam/images/aaro-pranam-768x432.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://shows.pages.dev/aaropranam/" />
+    <meta property="twitter:title" content="Aaropranam" />
+    <meta property="twitter:description"
+        content="Ranamma prays god to show her family a she feel lonely without her family. What if Priya learns the true relationship between her and Ranamma?" />
+    <meta property="twitter:image"
+        content="https://etv-win-image.akamaized.net/etvwin/serials/shows67883/aaro-pranam/images/aaro-pranam-768x432.jpg" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <style type="text/css">
+        #backimg {
+            background-image: url('https://etv-win-image.akamaized.net/etvwin/serials/shows67883/aaro-pranam/images/aaro-pranam-1960x600.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: auto;
+            width: 100%;
+            top: 0;
+            left: 0;
+
+        }
+
+        .list-group-item {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: rgb(256, 256, 250);
+            text-decoration: underline;
+        }
+
+        .list-group li a:hover {
+            color: #ffaa00;
+        }
+    </style>
+</head>
+
+<body id="backimg">
+
+    <div class="container mt-5">
+        <div class="row mt-5 mb-5">
+
+            <div class="col-md-8 mx-auto">
+                <ol class="list-group list-group-numbered">
+                    <li><a class="glightbox list-group-item" rel="popover"
+                            data-img="https://etv-win-image.akamaized.net/etvwin/serials/shows/aaropranam/subcategories/season1/episodes/epi03/19436/epi-03-ARP_28May25_EP_03-768x432.jpg"
+                            href="ARP_28May25_EP_03">ARP_28May25_EP_03</a></li>
+                    <li><a class="glightbox list-group-item" rel="popover"
+                            data-img="https://etv-win-image.akamaized.net/etvwin/serials/shows/aaropranam/subcategories/season1/episodes/epi02/14291/epi-02-ARP_27May25_EP_02-768x432.jpg"
+                            href="ARP_27May25_EP_02">ARP_27May25_EP_02</a></li>
+                    <li><a class="glightbox list-group-item" rel="popover"
+                            data-img="https://etv-win-image.akamaized.net/etvwin/serials/shows/aaropranam/subcategories/season1/episodes/epi01/59221/epi-01-ARP_26May25_EP_01-768x432.jpg"
+                            href="ARP_26May25_EP_01">ARP_26May25_EP_01</a></li>
+
+
+                </ol>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+
+
+        var lightbox = GLightbox({
+            //height: '100vh', These options seem to have no effect.
+            //width: 'auto',
+            loop: true
+        });
+
+        $(document).ready(function () {
+            if (jQuery) {
+                $('a[rel=popover]').popover({
+                    html: true,
+                    trigger: 'hover',
+                    placement: 'bottom',
+                    content: function () { return '<img width="200px" height="140px" src="' + $(this).data('img') + '" />'; }
+                });
+            } else {
+                // jQuery is not loaded
+                alert("Doesn't Work");
+            }
+        });
+
+
+
+    </script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "baee8c1ded0c4180be5d02698f41fbe6"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</body>
+
+</html>
