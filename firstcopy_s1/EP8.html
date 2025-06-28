@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First Copy S1-E8</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="First Copy S1-E8">
+    <meta name="description"
+        content="Missing the Niyaz and breaking Afreen's trust, Arif returns with a stolen reel and a risky idea: a pirated copy. With Praveen by his side and names in hand, he dives into a game and takes one step back to restart his piracy business.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shows.pages.dev/">
+    <meta property="og:title" content="First Copy S1-E8">
+    <meta property="og:description"
+        content="Missing the Niyaz and breaking Afreen's trust, Arif returns with a stolen reel and a risky idea: a pirated copy. With Praveen by his side and names in hand, he dives into a game and takes one step back to restart his piracy business.">
+    <meta property="og:image"
+        content="https://m.media-amazon.com/images/S/pv-target-images/1c19811c3ae70d415df45bed542a57b6a757675819ed2f06f40308319cf07fe0.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shows.pages.dev/">
+    <meta property="twitter:title" content="First Copy S1-E8">
+    <meta property="twitter:description"
+        content="Missing the Niyaz and breaking Afreen's trust, Arif returns with a stolen reel and a risky idea: a pirated copy. With Praveen by his side and names in hand, he dives into a game and takes one step back to restart his piracy business.">
+    <meta property="twitter:image"
+        content="https://m.media-amazon.com/images/S/pv-target-images/1c19811c3ae70d415df45bed542a57b6a757675819ed2f06f40308319cf07fe0.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Load Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3/dist/plyr.css" />
+
+</head>
+
+<body>
+
+    <div class="container text-white text-center">
+        <div class="row">
+
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="https://amzn.to/4gQmrCm" target="_blank" title="Have a Cool Cool Summer">
+                            <img src="../img/71al+OvlvkL._SL1502_.jpg" class="card-img-top img-fluid"
+                                title="Have a Cool Cool Summer" alt="Have a Cool Cool Summer">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <h3 class="text-center">First Copy S1-E8</h3>
+            <div class="col-md-8 mx-auto">
+                <video preload="none" id="player" poster="" controls crossorigin>
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/2.4.0/shaka-player.compiled.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+    <!-- Load Plyr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const source =
+                "https://d3s0ximcru5bdx.cloudfront.net/saltmediaavod-firstcopy-s1e8-ss2025-1750840461128/cmaf/H_264/saltmediaavod-firstcopy-s1e8-ss2025/saltmediaavod_saltmediaavod-firstcopy-s1e8-ss2025.mpd";
+            const video = document.querySelector("video");
+            // For options (second argument) see: https://github.com/sampotts/plyr/#options
+            const player = new Plyr(video);
+            // Expose player so it can be used from the console
+            window.player = player;
+
+            var poster = "https://m.media-amazon.com/images/S/pv-target-images/1c19811c3ae70d415df45bed542a57b6a757675819ed2f06f40308319cf07fe0.jpg";
+            video.setAttribute('poster', poster);
+
+            // For more Shaka Player options, see: https://github.com/google/shaka-player
+            if (shaka.Player.isBrowserSupported()) {
+                // Install built-in polyfills
+                shaka.polyfill.installAll();
+                const shakaInstance = new shaka.Player(video);
+                shakaInstance.load(source);
+            } else {
+                console.warn("Browser is not supported!");
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
