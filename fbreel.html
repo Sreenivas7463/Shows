@@ -50,41 +50,6 @@
 
             document.getElementById("title").innerHTML = 'FB Player - ' + title;
         });
-
-        window.onload = function exampleFunction() {
-            console.log('The script will load now.');
-            // Add an event listener to trigger fullscreen when the user clicks anywhere on the page
-            document.addEventListener('click', enterFullscreenOnClick);
-        };
-
-        function enterFullscreenOnClick() {
-            let fullscreenElement = document.documentElement; // Or select a specific element
-
-            if (fullscreenElement.requestFullscreen) {
-                fullscreenElement.requestFullscreen().catch(err => {
-                    console.log(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`); // Log the error instead of an alert
-                });
-            } else if (fullscreenElement.webkitRequestFullscreen) { /* Safari */
-                fullscreenElement.webkitRequestFullscreen();
-            } else if (fullscreenElement.msRequestFullscreen) { /* IE11 */
-                fullscreenElement.msRequestFullscreen();
-            } else if (fullscreenElement.mozRequestFullScreen) { // For older Firefox
-                fullscreenElement.mozRequestFullScreen();
-            }
-
-
-            // After triggering fullscreen, remove the event listener so it only happens once
-            document.removeEventListener('click', enterFullscreenOnClick);
-        }
-
-        // Optional: Add a listener for fullscreen changes to detect user exit etc.
-        document.addEventListener('fullscreenchange', () => {
-            if (document.fullscreenElement) {
-                console.log('Fullscreen mode activated');
-            } else {
-                console.log('Fullscreen mode deactivated');
-            }
-        });
     </script>
 
 </body>
