@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anantapur: 3-Day Tour Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-dark: #00424a;
+            --primary-light: #edfcff;
+            --secondary-dark: #273f43;
+            --secondary-light: #dbf6fa;
+            --tertiary-dark: #2f3b58;
+            --tertiary-light: #bac6ea;
+            --background-color: #cde7ec;
+            --error-color: #de3730;
+            --neutral-dark: #393c3d;
+            --neutral-light: #f8fafa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--neutral-dark);
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .header {
+            background-color: var(--primary-dark);
+            color: var(--primary-light);
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-bar {
+            background-color: var(--secondary-dark);
+            padding: 0.75rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            color: var(--secondary-light);
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .day-section {
+            background-color: var(--neutral-light);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .day-title {
+            color: var(--primary-dark);
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary-light);
+            padding-bottom: 0.75rem;
+        }
+
+        .section-heading {
+            color: var(--tertiary-dark);
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .itinerary-item {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .itinerary-item strong {
+            color: var(--secondary-dark);
+        }
+
+        .attraction-card {
+            background-color: var(--dbf6fa);
+            /* secondary-light */
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .attraction-card img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .food-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .food-list li {
+            background-color: var(--primary-light);
+            padding: 0.75rem 1rem;
+            border-radius: 0.375rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .food-list li::before {
+            content: '🍽️';
+            /* Food emoji */
+            font-size: 1.2em;
+        }
+
+        @media (min-width: 768px) {
+            .nav-bar {
+                display: flex;
+                justify-content: center;
+            }
+
+            .nav-bar div {
+                display: flex;
+                gap: 1rem;
+            }
+
+            .attraction-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .attraction-card {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .attraction-card img {
+                width: 100%;
+                height: 200px;
+                /* Fixed height for consistency */
+            }
+        }
+    </style>
+    <style>
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+
+        :host,
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        input:where([type=button]),
+        input:where([type=reset]),
+        input:where([type=submit]) {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none
+        }
+
+        :-moz-focusring {
+            outline: auto
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0
+        }
+
+        legend {
+            padding: 0
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        dialog {
+            padding: 0
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        [role=button],
+        button {
+            cursor: pointer
+        }
+
+        :disabled {
+            cursor: default
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        [hidden]:where(:not([hidden=until-found])) {
+            display: none
+        }
+
+        .container {
+            width: 100%
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                max-width: 640px
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1280px
+            }
+        }
+
+        @media (min-width: 1536px) {
+            .container {
+                max-width: 1536px
+            }
+        }
+
+        .mt-4 {
+            margin-top: 1rem
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .list-disc {
+            list-style-type: disc
+        }
+
+        .flex-col {
+            flex-direction: column
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .gap-2 {
+            gap: 0.5rem
+        }
+
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem
+        }
+
+        .pl-5 {
+            padding-left: 1.25rem
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem
+        }
+
+        .text-base {
+            font-size: 1rem;
+            line-height: 1.5rem
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem
+        }
+
+        .font-extrabold {
+            font-weight: 800
+        }
+
+        .font-semibold {
+            font-weight: 600
+        }
+
+        @media (min-width: 768px) {
+            .md\:flex-row {
+                flex-direction: row
+            }
+
+            .md\:gap-4 {
+                gap: 1rem
+            }
+
+            .md\:text-5xl {
+                font-size: 3rem;
+                line-height: 1
+            }
+
+            .md\:text-xl {
+                font-size: 1.25rem;
+                line-height: 1.75rem
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="text-4xl md:text-5xl font-extrabold">Anantapur: A Comprehensive 3-Day Tour Guide</h1>
+        <p class="mt-4 text-lg md:text-xl">Explore the spiritual, architectural, and natural wonders of Anantapur.</p>
+    </div>
+
+    <nav class="nav-bar">
+        <div class="container flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4">
+            <a href="#day1" class="nav-link">Day 1</a>
+            <a href="#day2" class="nav-link">Day 2</a>
+            <a href="#day3" class="nav-link">Day 3</a>
+        </div>
+    </nav>
+
+    <main class="container py-8">
+        <!-- Day 1 Section -->
+        <section id="day1" class="day-section">
+            <h2 class="day-title">Day 1: Spiritual Journey to Puttaparthi &amp; Anantapur City Landmarks</h2>
+
+            <h3 class="section-heading">Daily Itinerary</h3>
+            <ul class="list-disc pl-5 text-lg">
+                <li class="itinerary-item"><strong>Morning:</strong> Depart for <strong>Prasanthi Nilayam
+                        (Puttaparthi)</strong> (approx. 80 km from Anantapur). Explore the spiritual center, attend
+                    prayer sessions (Aumkar, Veda Chanting, Bhajans), and have Darshan of Bhagawan's MahaSamadhi.</li>
+                <li class="itinerary-item"><strong>Lunch:</strong> Enjoy a vegetarian meal at one of the Canteens within
+                    Prasanthi Nilayam (South Indian, North Indian, or Western Canteen) or a local eatery in Puttaparthi.
+                </li>
+                <li class="itinerary-item"><strong>Afternoon:</strong> Drive back to Anantapur and visit the
+                    <strong>ISKCON Temple (Radha Parthasarathi Temple)</strong>, known for its distinct chariot-like
+                    design.
+                </li>
+                <li class="itinerary-item"><strong>Evening:</strong> Explore the heart of Anantapur city, visiting the
+                    iconic <strong>Anantapur Clock Tower</strong>, a historical landmark commemorating India's
+                    Independence.</li>
+            </ul>
+
+            <h3 class="section-heading">Specific Attractions</h3>
+            <div class="attraction-grid">
+                <div class="attraction-card">
+                    <img src="https://opal.withgoogle.com/board/blobs/b376625f-ba19-438d-b54d-8a734e67041d"
+                        alt="Prasanthi Nilayam (Puttaparthi)">
+                    <p class="text-base font-semibold text-neutral-dark">Prasanthi Nilayam (Puttaparthi)</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://opal.withgoogle.com/board/blobs/9d3a49a3-d66d-47e5-9c48-ead2c5491a9d"
+                        alt="ISKCON Temple (Radha Parthasarathi Temple)">
+                    <p class="text-base font-semibold text-neutral-dark">ISKCON Temple (Radha Parthasarathi Temple)</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://opal.withgoogle.com/board/blobs/7b83c781-e16c-4030-b3ce-e736048790ce"
+                        alt="Anantapur Clock Tower">
+                    <p class="text-base font-semibold text-neutral-dark">Anantapur Clock Tower</p>
+                </div>
+            </div>
+
+            <h3 class="section-heading">Food Recommendations</h3>
+            <ul class="food-list text-lg">
+                <li><strong>Breakfast:</strong> Light South Indian breakfast (e.g., Idli, Dosa) before departure.</li>
+                <li><strong>Lunch:</strong> Authentic vegetarian meal at a Prasanthi Nilayam Canteen.</li>
+                <li><strong>Dinner:</strong> Savor <strong>Biryani</strong> at Hyderabad Chefs Restaurant or SS Paradise
+                    Restaurant. For pure vegetarian options, Hotel Vanta Gadhi is recommended.</li>
+            </ul>
+        </section>
+
+        <!-- Day 2 Section -->
+        <section id="day2" class="day-section">
+            <h2 class="day-title">Day 2: Vijayanagara Architectural Marvels</h2>
+
+            <h3 class="section-heading">Daily Itinerary</h3>
+            <ul class="list-disc pl-5 text-lg">
+                <li class="itinerary-item"><strong>Morning:</strong> Depart for <strong>Lepakshi Temple (Veerabhadra
+                        Temple)</strong> (approx. 120 km from Anantapur). Spend the morning marveling at this
+                    16th-century masterpiece of Vijayanagara architecture, renowned for its intricate carvings, stunning
+                    frescoes, the large Nandi statue, and the iconic "hanging pillar."</li>
+                <li class="itinerary-item"><strong>Lunch:</strong> Have lunch at a local restaurant in Lepakshi or a
+                    suitable eatery on the way to Penukonda.</li>
+                <li class="itinerary-item"><strong>Afternoon:</strong> Proceed to <strong>Penukonda Fort</strong>
+                    (approx. 70 km from Anantapur). Explore this majestic structure built by the Vijayanagara kings,
+                    including the Gagan Mahal and Babayya Darga.</li>
+                <li class="itinerary-item"><strong>Evening:</strong> Drive back to Anantapur.</li>
+            </ul>
+
+            <h3 class="section-heading">Specific Attractions</h3>
+            <div class="attraction-grid">
+                <div class="attraction-card">
+                    <img src="https://opal.withgoogle.com/board/blobs/97919e54-d57e-4090-9817-e6dc876f99e0"
+                        alt="Lepakshi Temple (Veerabhadra Temple)">
+                    <p class="text-base font-semibold text-neutral-dark">Lepakshi Temple (Veerabhadra Temple)</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://opal.withgoogle.com/board/blobs/5e6c601d-00be-40b5-9ec6-345adc07381c"
+                        alt="Penukonda Fort">
+                    <p class="text-base font-semibold text-neutral-dark">Penukonda Fort</p>
+                </div>
+            </div>
+
+            <h3 class="section-heading">Food Recommendations</h3>
+            <ul class="food-list text-lg">
+                <li><strong>Breakfast:</strong> Try <strong>Pesarattu</strong> with ginger chutney for a traditional
+                    start.</li>
+                <li><strong>Lunch:</strong> Opt for a simple, authentic Andhra meal at a local dhabha or a small
+                    restaurant en route.</li>
+                <li><strong>Dinner:</strong> Sample <strong>Gutti Vankaya Curry</strong> or an <strong>Andhra
+                        Thali</strong> at Sri Roopa Multicuisine Restaurant for a comprehensive local experience.</li>
+            </ul>
+        </section>
+
+        <!-- Day 3 Section -->
+        <section id="day3" class="day-section">
+            <h2 class="day-title">Day 3: Nature's Grandeur &amp; Ancient Shrines</h2>
+
+            <h3 class="section-heading">Daily Itinerary</h3>
+            <ul class="list-disc pl-5 text-lg">
+                <li class="itinerary-item"><strong>Morning:</strong> Depart for <strong>Thimmamma Marrimanu</strong>
+                    (approx. 107 km from Anantapur), one of the largest banyan trees in South India, covering 5 acres.
+                    Visit the quaint temple beneath it.</li>
+                <li class="itinerary-item"><strong>Lunch:</strong> Enjoy a meal at a restaurant near the attraction or a
+                    highway restaurant like Blue Moon Highway Restaurant on NH7.</li>
+                <li class="itinerary-item"><strong>Afternoon:</strong> Head to <strong>Bugga Ramalingeswara Swamy
+                        Temple</strong> near Tadipatri (approx. 55 km east of Anantapur). Discover this temple dedicated
+                    to Lord Shiva, famous for its natural underground water spring trickling onto the Lingam. (Optional:
+                    If time and energy permit, visit <strong>Guguddu (Pir Kullayappa Shrine)</strong>, 29 km from
+                    Anantapur, for a unique pluralistic devotional experience.)</li>
+                <li class="itinerary-item"><strong>Evening:</strong> Drive back to Anantapur.</li>
+            </ul>
+
+            <h3 class="section-heading">Specific Attractions</h3>
+            <div class="attraction-grid">
+                <div class="attraction-card">
+                    <img src="https://opal.withgoogle.com/board/blobs/6407102c-cf3f-478e-8dea-f0a306f01297"
+                        alt="Thimmamma Marrimanu">
+                    <p class="text-base font-semibold text-neutral-dark">Thimmamma Marrimanu</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://opal.withgoogle.com/board/blobs/ca380e55-0bdf-44c7-8e9d-23d5c33b050b"
+                        alt="Bugga Ramalingeswara Swamy Temple">
+                    <p class="text-base font-semibold text-neutral-dark">Bugga Ramalingeswara Swamy Temple</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://opal.withgoogle.com/board/blobs/33ba524e-c225-44ec-85b8-55df9683f039"
+                        alt="Guguddu (Pir Kullayappa Shrine)">
+                    <p class="text-base font-semibold text-neutral-dark">Guguddu (Pir Kullayappa Shrine)</p>
+                </div>
+            </div>
+
+            <h3 class="section-heading">Food Recommendations</h3>
+            <ul class="food-list text-lg">
+                <li><strong>Breakfast:</strong> Enjoy <strong>Idli and Dosa</strong> from a local favorite like
+                    Gurukrupa Hotel or Sujatha Hotel.</li>
+                <li><strong>Lunch:</strong> A hearty meal at Blue Moon Highway Restaurant.</li>
+                <li><strong>Dinner:</strong> Indulge in local snacks like <strong>Punugulu</strong> or traditional
+                    sweets like <strong>Rava Kesari</strong> or <strong>Bobbattu</strong>, followed by dinner at a
+                    restaurant of your choice. Many eateries in Anantapur offer 24-hour service.</li>
+            </ul>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

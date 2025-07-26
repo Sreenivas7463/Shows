@@ -1,0 +1,296 @@
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadipatri - 3-Day Tour</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #00424a;
+            --primary-light: #edfcff;
+            --secondary-dark: #273f43;
+            --secondary-light: #dbf6fa;
+            --tertiary-dark: #2f3b58;
+            --tertiary-light: #bac6ea;
+            --background-color: #cde7ec;
+            --error-color: #de3730;
+            --neutral-dark: #393c3d;
+            --neutral-light: #f8fafa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--neutral-dark);
+        }
+
+        .bg-primary-dark {
+            background-color: var(--primary-dark);
+        }
+
+        .text-primary-light {
+            color: var(--primary-light);
+        }
+
+        .bg-primary-light {
+            background-color: var(--primary-light);
+        }
+
+        .text-secondary-dark {
+            color: var(--secondary-dark);
+        }
+
+        .bg-secondary-light {
+            background-color: var(--secondary-light);
+        }
+
+        .text-tertiary-dark {
+            color: var(--tertiary-dark);
+        }
+
+        .bg-tertiary-light {
+            background-color: var(--tertiary-light);
+        }
+
+        .text-neutral-dark {
+            color: var(--neutral-dark);
+        }
+
+        .text-neutral-light {
+            color: var(--neutral-light);
+        }
+
+        .border-primary-dark {
+            border-color: var(--primary-dark);
+        }
+
+        .section-title {
+            @apply text-3xl md:text-4xl font-extrabold text-primary-dark mb-6 border-b-4 border-primary-dark pb-2;
+        }
+
+        .day-card {
+            @apply bg-primary-light rounded-lg shadow-xl p-6 mb-10;
+        }
+
+        .day-heading {
+            @apply text-2xl md:text-3xl font-bold text-secondary-dark mb-4;
+        }
+
+        .activity-time {
+            @apply text-lg font-semibold text-tertiary-dark mb-2;
+        }
+
+        .activity-description {
+            @apply text-neutral-dark leading-relaxed mb-4;
+        }
+
+        .food-recommendations {
+            @apply bg-secondary-light p-4 rounded-md mt-6;
+        }
+
+        .food-recommendations h3 {
+            @apply text-xl font-bold text-secondary-dark mb-3;
+        }
+
+        .food-recommendations ul {
+            @apply list-disc list-inside text-neutral-dark;
+        }
+
+        .nav-link {
+            @apply block py-2 px-4 rounded-md text-primary-light hover:bg-primary-light hover:text-primary-dark transition-colors duration-300;
+        }
+
+        .image-container {
+            @apply w-full h-64 md:h-80 lg:h-96 overflow-hidden rounded-lg shadow-md mb-4;
+        }
+
+        .image-container img {
+            @apply w-full h-full object-cover object-center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-primary-dark text-primary-light py-6 shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2">Tadipatri - A 3-Day Historical and Natural Wonders Tour
+            </h1>
+            <p class="text-xl md:text-2xl font-light opacity-90">Explore the hidden gems of Andhra Pradesh</p>
+        </div>
+    </header>
+
+    <nav class="bg-secondary-dark py-3 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-6">
+                <li><a href="#day1" class="nav-link">Day 1</a></li>
+                <li><a href="#day2" class="nav-link">Day 2</a></li>
+                <li><a href="#day3" class="nav-link">Day 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-10">
+        <!-- Day 1 -->
+        <section id="day1" class="day-card">
+            <h2 class="section-title">Day 1: Tadipatri's Architectural Wonders &amp; Local Flavors</h2>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Morning (9:00 AM - 1:00 PM): Chintala Venkataramana Swamy Temple</h3>
+                <div class="image-container">
+                    <img src="https://opal.withgoogle.com/board/blobs/e529ac46-e73e-4ef6-8f97-8876c56af7ec"
+                        alt="Chintala Venkataramana Swamy Temple">
+                </div>
+                <p class="activity-description">Begin your tour in the heart of Tadipatri by visiting the magnificent
+                    16th-century Chintala Venkataramana Swamy Temple. Dedicated to Lord Venkateswara, this temple is a
+                    prime example of Vijayanagara architecture, renowned for its intricate carvings depicting episodes
+                    from the Ramayana, Mahabharata, and Bhagavatha. Don't miss the Garuda Mandapa designed as a chariot
+                    with rotating granite wheels.</p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Lunch (1:00 PM - 2:30 PM): Local Rayalaseema Cuisine</h3>
+                <p class="activity-description">Indulge in authentic local dishes. Try the spicy and flavorful
+                    **Andhra-style Biryani**, often made with *chitti muthyalu* rice. Sample the comprehensive
+                    **Rayalaseema Ruchulu** which includes spicy curries, rice, and pickles.</p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Afternoon (2:30 PM - 5:30 PM): Bugga Ramalingeswara Swamy Temple</h3>
+                <div class="image-container">
+                    <img src="https://opal.withgoogle.com/board/blobs/205a7fe2-9a9c-4ade-9cb3-0ca75aba7495"
+                        alt="Bugga Ramalingeswara Swamy Temple">
+                </div>
+                <p class="activity-description">Just 1 km from the Chintala temple, visit the Bugga Ramalingeswara Swamy
+                    Temple, dedicated to Lord Shiva. Located on the banks of the Pennar River, this temple is unique for
+                    its perennial underground stream ("Bugga") that continuously flows into the sanctum sanctorum.
+                    Admire the blend of Chalukyan, Chola, and Vijayanagar art, with the entire Shiva Purana carved on
+                    its walls.</p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Evening (5:30 PM onwards): Explore Local Markets &amp; Street Food</h3>
+                <p class="activity-description">Wander through Tadipatri's local markets. For a light dinner or snack,
+                    explore the street food scene.</p>
+            </div>
+
+            <div class="food-recommendations">
+                <h3>Food Recommendations for Day 1:</h3>
+                <ul>
+                    <li><strong>Breakfast:</strong> Pesarattu (crispy moong dal dosa).</li>
+                    <li><strong>Lunch:</strong> Andhra-style Biryani, Gutti Vankaya (stuffed brinjal).</li>
+                    <li><strong>Dinner/Snacks:</strong> Mirchi Bajji (deep-fried chili peppers), Pani Puri, and other
+                        local street food.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Day 2 -->
+        <section id="day2" class="day-card">
+            <h2 class="section-title">Day 2: Grand Canyons and Fort Exploration</h2>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Morning (9:00 AM - 1:30 PM): Gandikota Fort &amp; Penna River Gorge</h3>
+                <div class="image-container">
+                    <img src="https://opal.withgoogle.com/board/blobs/369636d8-de22-4122-a437-37d9e5b38f60"
+                        alt="Gandikota Fort &amp; Penna River Gorge">
+                </div>
+                <p class="activity-description">Embark on a scenic drive to Gandikota Fort (approx. 30 km from
+                    Tadipatri), often referred to as the "Grand Canyon of India." Explore the historic fort, its ancient
+                    temples (Madhava and Ranganatha), and the Jamia Masjid. The fort offers breathtaking panoramic views
+                    of the Penna River gorge.</p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Lunch (1:30 PM - 2:30 PM): Limited Options at Gandikota</h3>
+                <p class="activity-description">Food options near Gandikota Fort are limited. It is advisable to pack
+                    some snacks and water. The Haritha Hotel (APTDC) near the fort has a restaurant.</p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Afternoon (2:30 PM - 6:00 PM): Canyon Views &amp; Fort Exploration</h3>
+                <div class="image-container">
+                    <img src="https://opal.withgoogle.com/board/blobs/599372fd-9e34-4e06-8916-115f8b046a3c"
+                        alt="Gandikota Canyon Views">
+                </div>
+                <p class="activity-description">Spend more time soaking in the majestic views of the Penna River gorge.
+                    Enjoy photography, light trekking, or simply admire the unique topography.</p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Evening (6:00 PM onwards): Return to Tadipatri</h3>
+                <p class="activity-description">Head back to Tadipatri for dinner and relaxation.</p>
+            </div>
+
+            <div class="food-recommendations">
+                <h3>Food Recommendations for Day 2:</h3>
+                <ul>
+                    <li><strong>Lunch:</strong> Packaged snacks, fruits, and water. If dining at Haritha Hotel, explore
+                        their available cuisine.</li>
+                    <li><strong>Dinner:</strong> Try **Natu Kodi Pulusu** (spicy chicken curry) or **Gongura Pachadi**
+                        (tangy sorrel leaves chutney) at a local restaurant in Tadipatri.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Day 3 -->
+        <section id="day3" class="day-card">
+            <h2 class="section-title">Day 3: Subterranean Wonders and Serene Temples</h2>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Morning (9:00 AM - 1:00 PM): Belum Caves</h3>
+                <div class="image-container">
+                    <img src="https://opal.withgoogle.com/board/blobs/992b7918-d678-480b-b6f8-a9a4f5f98a75"
+                        alt="Belum Caves">
+                </div>
+                <p class="activity-description">Journey to Belum Caves (approx. 30-50 km from Tadipatri), the
+                    second-longest natural cave system in India. Explore the unique rock formations, stalactites, and
+                    stalagmites. Witness the "Patalaganga," a mysterious underground stream.</p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Lunch (1:00 PM - 2:00 PM): Dine near Belum Caves</h3>
+                <p class="activity-description">A canteen is available at the Belum Caves complex for visitors.</p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Afternoon (2:00 PM - 4:00 PM): Aluru Kona Sri Kona Ranganatha Swamy Temple</h3>
+                <div class="image-container">
+                    <img src="https://opal.withgoogle.com/board/blobs/55c99d80-e6b9-4908-9a82-d01dfdb476ae"
+                        alt="Aluru Kona Sri Kona Ranganatha Swamy Temple">
+                </div>
+                <p class="activity-description">Visit the Aluru Kona Sri Kona Ranganatha Swamy Temple (approx. 7 km from
+                    Tadipatri). This temple, dedicated to Lord Vishnu, is situated on a hillock and features a natural
+                    spring with flowing water.</p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="day-heading">Late Afternoon (4:00 PM - 6:00 PM): Sri Chennakesava Swamy Temple, Chukkaluru
+                </h3>
+                <p class="activity-description">Conclude your tour with a visit to the Sri Chennakesava Swamy Temple in
+                    Chukkaluru (approx. 8 km north of Tadipatri), an ancient monument recognized for its beautiful and
+                    intricate sculptures.</p>
+            </div>
+
+            <div class="food-recommendations">
+                <h3>Food Recommendations for Day 3:</h3>
+                <ul>
+                    <li><strong>Breakfast:</strong> Idli, Dosa, or Upma for a traditional start to your day.</li>
+                    <li><strong>Throughout the Day:</strong> Don't forget to try **Aavakaaya** (spicy mango pickle) and
+                        satisfy your sweet cravings with **Chitti Mutyalu** (small sweets made from rice flour, jaggery,
+                        and coconut).</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary-dark text-primary-light py-6 text-center shadow-inner">
+        <div class="container mx-auto px-4">
+            <p>© 2023 Tadipatri Tour Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
