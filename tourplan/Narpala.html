@@ -1,0 +1,352 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Day Narapala &amp; Anantapur Tour</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #00424a;
+            --primary-light: #edfcff;
+            --secondary-dark: #273f43;
+            --secondary-light: #dbf6fa;
+            --tertiary-dark: #2f3b58;
+            --tertiary-light: #bac6ea;
+            --background-color: #cde7ec;
+            --error-color: #de3730;
+            --neutral-dark: #393c3d;
+            --neutral-light: #f8fafa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--neutral-dark);
+            scroll-behavior: smooth;
+        }
+
+        .bg-primary-dark {
+            background-color: var(--primary-dark);
+        }
+
+        .text-primary-light {
+            color: var(--primary-light);
+        }
+
+        .bg-primary-light {
+            background-color: var(--primary-light);
+        }
+
+        .text-secondary-dark {
+            color: var(--secondary-dark);
+        }
+
+        .bg-secondary-light {
+            background-color: var(--secondary-light);
+        }
+
+        .text-tertiary-dark {
+            color: var(--tertiary-dark);
+        }
+
+        .bg-tertiary-light {
+            background-color: var(--tertiary-light);
+        }
+
+        .text-neutral-dark {
+            color: var(--neutral-dark);
+        }
+
+        .text-neutral-light {
+            color: var(--neutral-light);
+        }
+
+        .section-title {
+            @apply text-4xl md:text-5xl font-extrabold text-primary-dark mb-8 text-center;
+        }
+
+        .day-card {
+            @apply bg-primary-light rounded-xl shadow-lg p-6 md:p-8 mb-12 border-b-4 border-primary-dark;
+        }
+
+        .day-heading {
+            @apply text-3xl md:text-4xl font-bold text-secondary-dark mb-6 pb-2 border-b-2 border-secondary-light;
+        }
+
+        .sub-heading {
+            @apply text-2xl font-semibold text-tertiary-dark mb-4;
+        }
+
+        .content-list {
+            @apply list-disc pl-5 space-y-2 text-lg;
+        }
+
+        .attraction-item {
+            @apply flex flex-col md:flex-row items-center bg-secondary-light rounded-lg p-4 mb-4 shadow-md;
+        }
+
+        .attraction-image {
+            @apply w-full md:w-1/3 lg:w-1/4 h-48 object-cover rounded-md mb-4 md:mb-0 md:mr-6 shadow-inner;
+        }
+
+        .attraction-description {
+            @apply flex-1 text-lg;
+        }
+
+        .food-list {
+            @apply list-disc pl-5 space-y-2 text-lg;
+        }
+
+        .nav-link {
+            @apply block py-2 px-4 text-lg font-medium rounded-md transition-colors duration-300;
+        }
+
+        .nav-link:hover {
+            @apply bg-primary-dark text-primary-light;
+        }
+
+        .nav-link.active {
+            @apply bg-primary-dark text-primary-light;
+        }
+
+        @media (max-width: 768px) {
+            .attraction-item {
+                flex-direction: column;
+            }
+
+            .attraction-image {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-primary-dark text-primary-light py-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <h1 class="text-3xl font-extrabold mb-2 md:mb-0">Narapala &amp; Anantapur Tour</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#day1" class="nav-link">Day 1</a></li>
+                    <li><a href="#day2" class="nav-link">Day 2</a></li>
+                    <li><a href="#day3" class="nav-link">Day 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="text-center mb-12">
+            <h2 class="section-title">3-Day Tour Guide: Exploring Narapala Village and Anantapur District</h2>
+            <p class="text-xl text-neutral-dark max-w-3xl mx-auto">Embark on a captivating journey through the
+                spiritual, historical, and cultural wonders of Narapala Village and the Anantapur District. Discover
+                ancient temples, majestic forts, and serene natural landscapes.</p>
+        </section>
+
+        <!-- Day 1 -->
+        <section id="day1" class="day-card">
+            <h3 class="day-heading">Day 1: Narapala's Spiritual Heart and Natural Surroundings</h3>
+            <div class="mb-6">
+                <h4 class="sub-heading">Itinerary:</h4>
+                <ul class="content-list">
+                    <li>Begin your day by exploring the spiritual sites within Narapala Mandal.</li>
+                    <li>The afternoon can be dedicated to experiencing the local natural beauty or engaging in outdoor
+                        activities.</li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h4 class="sub-heading">Attractions:</h4>
+                <div class="attraction-item">
+                    <img src="https://opal.withgoogle.com/board/blobs/65ac19fd-a90e-4790-b208-b47b7d7ec265"
+                        alt="Gugudu Kullai Swamy Temple" class="attraction-image">
+                    <p class="attraction-description"><strong>Gugudu Kullai Swamy Temple:</strong> Located in Gugudu
+                        village within Narpala Mandal (approximately 29 km from Anantapur), this significant temple is
+                        dedicated to the venerated saint Sri Kullai Swamy. It's known for the Moharum Festival and a
+                        traditional fire-walking ceremony. The Sri Anjaneya Swamy Temple is also nearby.</p>
+                </div>
+                <div class="attraction-item">
+                    <img src="https://opal.withgoogle.com/board/blobs/cd61ccf1-08d0-45f7-b8d0-3740cc57c800"
+                        alt="Outdoor Activities in Narpala" class="attraction-image">
+                    <p class="attraction-description"><strong>Outdoor Activities in Narpala:</strong> Engage in
+                        activities such as camping, rock climbing, and trekking to appreciate the natural landscape of
+                        the area.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="sub-heading">Food Recommendations:</h4>
+                <p class="text-lg mb-2">While specific restaurants directly within Narapala village are limited in
+                    detail, you can find local eateries and Dhabas offering authentic Andhra-style cuisine. Restaurants
+                    in nearby Anantapur (approx. 23-25 km away) include:</p>
+                <ul class="food-list">
+                    <li><strong>Lavangam Restaurant:</strong> Known for "GREAT" food and ambiance, offering dishes like
+                        masala chicken, daal, malai kofta, and naan.</li>
+                    <li><strong>Dinesh Home Food:</strong> Praised for reasonable prices and home-cooked meal taste,
+                        located near Bellary Road Kamalanagar.</li>
+                    <li><strong>Golden Taj Family Restaurant:</strong> Highly rated for its Biryani, described as superb
+                        in taste, located on RF Road Old Town.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Day 2 -->
+        <section id="day2" class="day-card">
+            <h3 class="day-heading">Day 2: Historical Forts and Ancient Temples of the District</h3>
+            <div class="mb-6">
+                <h4 class="sub-heading">Itinerary:</h4>
+                <ul class="content-list">
+                    <li>Dedicate this day to a comprehensive exploration of the rich historical and religious sites
+                        scattered across the Anantapur district, accessible from Narapala.</li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h4 class="sub-heading">Attractions:</h4>
+                <div class="attraction-item">
+                    <img src="https://opal.withgoogle.com/board/blobs/a96d6ef0-7fca-41cc-b95a-cc8a40bd865b"
+                        alt="Gooty Fort" class="attraction-image">
+                    <p class="attraction-description"><strong>Gooty Fort:</strong> This ancient hill fort, built during
+                        the Vijayanagara era, stands majestically at a height of 300 meters, about 52 km from Anantapur.
+                        It is uniquely shaped like a shell with 15 main doors.</p>
+                </div>
+                <div class="attraction-item">
+                    <img src="https://opal.withgoogle.com/board/blobs/b92f164e-8c55-4162-9440-c732122e67a8"
+                        alt="Chintala Venkataramana Temple, Tadipatri" class="attraction-image">
+                    <p class="attraction-description"><strong>Chintala Venkataramana Temple, Tadipatri:</strong> Located
+                        in Tadipatri town (52 km from Anantapur), this temple is a significant architectural site.</p>
+                </div>
+                <div class="attraction-item">
+                    <img src="https://opal.withgoogle.com/board/blobs/a444a689-842e-480e-a66b-140e0f9e173b"
+                        alt="Bugga Ramalingeswara Temple, Tadipatri" class="attraction-image">
+                    <p class="attraction-description"><strong>Bugga Ramalingeswara Temple, Tadipatri:</strong> Situated
+                        1 km from Tadipatri, overlooking the Penna River, notable for a Lingam constantly filled with
+                        water from a natural spring.</p>
+                </div>
+                <div class="attraction-item">
+                    <img src="https://opal.withgoogle.com/board/blobs/65d6e444-2ed5-4908-b2be-00caa5098a09"
+                        alt="Nettikanti Veera Anjaneya Swamy Temple, Kasapuram" class="attraction-image">
+                    <p class="attraction-description"><strong>Nettikanti Veera Anjaneya Swamy Temple,
+                            Kasapuram:</strong> Located about 4 km north of Guntakal, this temple is a revered site for
+                        both Hindu and Muslim pilgrims, especially on Saturdays.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="sub-heading">Food Recommendations:</h4>
+                <p class="text-lg mb-2">Explore restaurants in Narapala or the towns visited (like Tadipatri). Options
+                    mentioned in Narapala include:</p>
+                <ul class="food-list">
+                    <li><strong>Priya Hotel</strong></li>
+                    <li><strong>Abhiruchi Family Restaurant</strong></li>
+                    <li><strong>Andhra Spice Family Restaurant</strong></li>
+                    <li><strong>Konda Dhaba</strong> and <strong>Lucky Daba</strong> (roadside restaurants offering
+                        various cuisines including Afghani, Andhra, Arabic, Biryani, and Indian).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Day 3 -->
+        <section id="day3" class="day-card">
+            <h3 class="day-heading">Day 3: Cultural Masterpieces and Spiritual Journeys</h3>
+            <div class="mb-6">
+                <h4 class="sub-heading">Itinerary:</h4>
+                <ul class="content-list">
+                    <li>On your final day, venture further to explore some of the most iconic cultural and spiritual
+                        landmarks in the wider region, offering a deeper insight into the area's heritage.</li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h4 class="sub-heading">Attractions:</h4>
+                <div class="attraction-item">
+                    <img src="https://opal.withgoogle.com/board/blobs/9bc34b7c-df35-4e4d-ac90-6b3306f9a52a"
+                        alt="Lepakshi Temple (Veerabhadra Temple)" class="attraction-image">
+                    <p class="attraction-description"><strong>Lepakshi Temple (Veerabhadra Temple):</strong> Located
+                        outside Anantapur district, approximately 15 km east of Hindupur. This 16th-century Vijayanagara
+                        masterpiece is famed for its architectural grandeur, intricate carvings, stunning frescoes, a
+                        large monolithic Nandi statue, and the iconic hanging pillar.</p>
+                </div>
+                <div class="attraction-item">
+                    <img src="https://opal.withgoogle.com/board/blobs/d868d6ad-ab47-4bc5-adcb-410fd5b271cb"
+                        alt="Puttaparthi (Prasanthi Nilayam)" class="attraction-image">
+                    <p class="attraction-description"><strong>Puttaparthi (Prasanthi Nilayam):</strong> Approximately 80
+                        km from Anantapur, this town is the birthplace of Sri Sathya Sai Baba and houses his ashram,
+                        Prasanthi Nilayam, making it a significant spiritual destination.</p>
+                </div>
+                <div class="attraction-item">
+                    <img src="https://opal.withgoogle.com/board/blobs/5ff1184f-ed55-4d6f-93f3-e2044caee8b0"
+                        alt="Thimmamma Marrimanu" class="attraction-image">
+                    <p class="attraction-description"><strong>Thimmamma Marrimanu:</strong> Located in Gutibayalu, about
+                        25 km from Anantapur, this site boasts one of the largest Banyan trees in South India, covering
+                        approximately 5 acres and holding a Guinness World Record.</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="sub-heading">Food Recommendations:</h4>
+                <p class="text-lg mb-2">As you travel to these destinations, you will find local eateries and
+                    restaurants in the respective towns. In Anantapur, you can consider other options like:</p>
+                <ul class="food-list">
+                    <li><strong>Sri Hari Kiran Family Restaurant:</strong> Known for delicious food, friendly staff, and
+                        good portion sizes.</li>
+                    <li><strong>Emerald Veg Park Ice Land:</strong> Offers good food quality and service, with North
+                        Indian dishes recommended.</li>
+                    <li>Numerous other restaurants in Anantapur offer diverse cuisines including North Indian, South
+                        Indian, and Chinese food.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary-dark text-primary-light py-6 text-center">
+        <p>© 2023 Narapala &amp; Anantapur Tour Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const sections = document.querySelectorAll('main section[id]');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    const navLink = document.querySelector(`nav ul li a[href="#${id}"]`);
+
+                    if (navLink) {
+                        if (entry.isIntersecting) {
+                            navLink.classList.add('active');
+                        } else {
+                            navLink.classList.remove('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
