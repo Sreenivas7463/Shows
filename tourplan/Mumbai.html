@@ -1,0 +1,535 @@
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai: A 3-Day Tour Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #00424a;
+            --primary-light: #edfcff;
+            --secondary-dark: #273f43;
+            --secondary-light: #dbf6fa;
+            --tertiary-dark: #2f3b58;
+            --tertiary-light: #bac6ea;
+            --background-color: #cde7ec;
+            --error-color: #de3730;
+            --neutral-dark: #393c3d;
+            --neutral-light: #f8fafa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--neutral-dark);
+        }
+
+        .header-bg {
+            background-color: var(--primary-dark);
+            color: var(--primary-light);
+        }
+
+        .nav-link {
+            color: var(--primary-light);
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary-light);
+        }
+
+        .section-title {
+            color: var(--primary-dark);
+        }
+
+        .subsection-title {
+            color: var(--secondary-dark);
+        }
+
+        .card-bg {
+            background-color: var(--neutral-light);
+            border-color: var(--secondary-light);
+        }
+
+        .food-recommendation {
+            color: var(--tertiary-dark);
+        }
+
+        .attraction-description {
+            color: var(--neutral-dark);
+        }
+
+        .time-slot {
+            color: var(--primary-dark);
+        }
+
+        .scroll-to-top {
+            background-color: var(--primary-dark);
+            color: var(--primary-light);
+            transition: background-color 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            background-color: var(--secondary-dark);
+        }
+
+        /* Custom scrollbar for aesthetics */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--background-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-dark);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-dark);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+    <header class="header-bg shadow-lg py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-extrabold mb-2 md:mb-0">Mumbai: A 3-Day Tour Guide</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#day1" class="nav-link text-lg font-semibold hover:underline">Day 1</a></li>
+                    <li><a href="#day2" class="nav-link text-lg font-semibold hover:underline">Day 2</a></li>
+                    <li><a href="#day3" class="nav-link text-lg font-semibold hover:underline">Day 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Day 1 -->
+        <section id="day1" class="mb-16 pt-16 -mt-16">
+            <h2 class="section-title text-4xl font-bold mb-8 text-center">Day 1: Southern Charms and Historic Wonders
+            </h2>
+
+            <!-- Morning -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(9:00 AM - 1:00
+                        PM)</span> Gateway of India &amp; Elephanta Caves</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li>
+                                <strong class="text-primary-dark">Gateway of India:</strong> Majestic arch monument in
+                                Colaba, a city symbol and ferry departure point.
+                                <img src="https://opal.withgoogle.com/board/blobs/ab3deab8-02f7-4f84-ab7b-8e8027f35c4c"
+                                    alt="Gateway of India" class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                            <li>
+                                <strong class="text-primary-dark">Elephanta Caves:</strong> UNESCO World Heritage Site
+                                with ancient rock-cut temples dedicated to Lord Shiva (5th-6th centuries AD), accessible
+                                by ferry from Gateway of India.
+                                <img src="https://opal.withgoogle.com/board/blobs/39bdf27f-5633-42aa-8c88-cb8fd69a704d"
+                                    alt="Elephanta Caves" class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Breakfast Recommendations:</h4>
+                        <ul class="list-disc list-inside space-y-2 food-recommendation">
+                            <li><strong class="text-secondary-dark">Olympia Coffee House:</strong> For traditional
+                                Kheema Pav and Irani Chai.</li>
+                            <li><strong class="text-secondary-dark">Cafe Mondegar:</strong> Known for English breakfast,
+                                baked beans, eggs, and toast.</li>
+                            <li><strong class="text-secondary-dark">Theobroma:</strong> Excellent breakfast comfort
+                                foods like sandwiches, quiches, and croissants.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(1:30 PM - 2:30
+                        PM)</span> Colaba's Culinary Delights</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li>
+                                <strong class="text-primary-dark">Colaba Causeway:</strong> Vibrant street shopping.
+                                <img src="https://opal.withgoogle.com/board/blobs/d12ff60b-99e3-4df9-9335-3504a8cab0b6"
+                                    alt="Colaba Causeway" class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Food Recommendations:</h4>
+                        <ul class="list-disc list-inside space-y-2 food-recommendation">
+                            <li><strong class="text-secondary-dark">Leopold Cafe:</strong> Historic cafe known for its
+                                lively street-side atmosphere and pub fare.</li>
+                            <li><strong class="text-secondary-dark">Other options:</strong> Bagdadi (budget-friendly
+                                North Indian/Mughlai), Delhi Darbar (rich Mughlai cuisine), Food Inn (comfort food).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Afternoon -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(3:00 PM - 6:00
+                        PM)</span> Chhatrapati Shivaji Maharaj Terminus &amp; Chhatrapati Shivaji Maharaj Vastu
+                    Sangrahalaya</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li>
+                                <strong class="text-primary-dark">Chhatrapati Shivaji Maharaj Terminus (CST):</strong>
+                                UNESCO World Heritage Site, a stunning example of Victorian Gothic architecture.
+                                <img src="https://opal.withgoogle.com/board/blobs/f2a4f24c-5b79-41fb-9f8b-8f36b20bcd04"
+                                    alt="Chhatrapati Shivaji Maharaj Terminus"
+                                    class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                            <li>
+                                <strong class="text-primary-dark">Chhatrapati Shivaji Maharaj Vastu
+                                    Sangrahalaya:</strong> Mumbai's largest museum, displaying diverse Indian exhibits.
+                                <img src="https://opal.withgoogle.com/board/blobs/7085ddd1-b464-4df7-8039-d82f5050d041"
+                                    alt="Chhatrapati Shivaji Maharaj Vastu Sangrahalaya"
+                                    class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evening -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(6:30 PM
+                        onwards)</span> Marine Drive Sunset</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li>
+                                <strong class="text-primary-dark">Marine Drive ("Queen's Necklace"):</strong> A 4 km
+                                long promenade offering beautiful views of the city skyline and Arabian Sea.
+                                <img src="https://opal.withgoogle.com/board/blobs/2e985497-d3b5-42aa-a751-ee3004616927"
+                                    alt="Marine Drive" class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Dinner Recommendations (near Girgaon Chowpatty at Marine
+                            Drive's northern end):</h4>
+                        <ul class="list-disc list-inside space-y-2 food-recommendation">
+                            <li><strong class="text-secondary-dark">Girgaon Chowpatty Street Food:</strong> Enjoy local
+                                delicacies like Pav Bhaji, Pani Puri, Bhel Puri, Kulfi, and Gola.</li>
+                            <li><strong class="text-secondary-dark">Crystal:</strong> Highly recommended vegetarian
+                                restaurant for traditional Indian dishes and Kheer.</li>
+                            <li><strong class="text-secondary-dark">Jafferbhais Delhi Darbar Restaurant:</strong> Known
+                                for delicious biryani.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 2 -->
+        <section id="day2" class="mb-16 pt-16 -mt-16">
+            <h2 class="section-title text-4xl font-bold mb-8 text-center">Day 2: Culture, Markets &amp; Local Life</h2>
+
+            <!-- Morning -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(9:30 AM - 1:00
+                        PM)</span> Dhobi Ghat &amp; Mahalakshmi Temple</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li>
+                                <strong class="text-primary-dark">Dhobi Ghat:</strong> Mumbai's massive open-air
+                                laundromat, a unique cultural sight.
+                                <img src="https://opal.withgoogle.com/board/blobs/1f4e1da7-523e-4df9-ba41-6bada41ee5a4"
+                                    alt="Dhobi Ghat" class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                            <li>
+                                <strong class="text-primary-dark">Shri Mahalakshmi Devi Temple:</strong> A revered Hindu
+                                temple dedicated to the goddess Lakshmi.
+                                <img src="https://opal.withgoogle.com/board/blobs/34ee0749-0128-406e-8b74-573f44bc2e3a"
+                                    alt="Shri Mahalakshmi Devi Temple"
+                                    class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Breakfast Recommendations (near Mahalaxmi Temple):</h4>
+                        <ul class="list-disc list-inside space-y-2 food-recommendation">
+                            <li><strong class="text-secondary-dark">Narayan Dosa Since 1970:</strong> Value-for-money
+                                South Indian dosas.</li>
+                            <li><strong class="text-secondary-dark">Shiv Sagar Veg Restaurant:</strong> Known for Pav
+                                Bhaji and other South Indian dishes.</li>
+                            <li><strong class="text-secondary-dark">A hidden gem next to Gallops at Mahalaxmi
+                                    Racecourse:</strong> Affordable batata wada and omelets with a view.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(1:30 PM - 2:30
+                        PM)</span> Authentic South Indian or Maharashtrian Fare</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Food Recommendations:</h4>
+                        <ul class="list-disc list-inside space-y-2 food-recommendation">
+                            <li><strong class="text-secondary-dark">Cafe Madras or Hotel Ram Ashraya:</strong> For
+                                authentic South Indian dosas and breakfast items.</li>
+                            <li><strong class="text-secondary-dark">Gajalee:</strong> Renowned for Maharashtrian
+                                seafood, especially Bombil Fry.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Afternoon -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(3:00 PM - 6:00
+                        PM)</span> Haji Ali Dargah &amp; Crawford Market</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li>
+                                <strong class="text-primary-dark">Haji Ali Dargah:</strong> Beautiful mosque and tomb
+                                located on an islet, accessible via a causeway during low tide.
+                                <img src="https://opal.withgoogle.com/board/blobs/7dafb1fe-5236-46f4-9445-be97d7201e15"
+                                    alt="Haji Ali Dargah" class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                            <li>
+                                <strong class="text-primary-dark">Crawford Market:</strong> Historic bustling market
+                                known for its diverse goods.
+                                <img src="https://opal.withgoogle.com/board/blobs/0bf96c1f-f5f6-49c8-8f90-53ea18b7bc3b"
+                                    alt="Crawford Market" class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evening -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(6:30 PM
+                        onwards)</span> Street Food Extravaganza</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li>
+                                <strong class="text-primary-dark">Chowpatty Beach (Girgaum Chowpatty):</strong> Lively
+                                beach atmosphere.
+                                <img src="https://opal.withgoogle.com/board/blobs/41300707-8e64-4d19-b0c7-3702eda28428"
+                                    alt="Chowpatty Beach" class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Food Recommendations:</h4>
+                        <ul class="list-disc list-inside space-y-2 food-recommendation">
+                            <li><strong class="text-secondary-dark">Chowpatty Beach Street Food:</strong> Indulge in Pav
+                                Bhaji, Vada Pav, and Bhelpuri from local vendors.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 3 -->
+        <section id="day3" class="mb-16 pt-16 -mt-16">
+            <h2 class="section-title text-4xl font-bold mb-8 text-center">Day 3: Serenity, Shopping &amp; Sunset Vibes
+            </h2>
+
+            <!-- Morning -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(10:00 AM - 1:00
+                        PM)</span> Siddhivinayak Temple or Global Vipassana Pagoda</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li>
+                                <strong class="text-primary-dark">Shree Siddhivinayak Temple:</strong> A prominent and
+                                widely revered Ganesha temple.
+                                <img src="https://opal.withgoogle.com/board/blobs/b465c8d0-c65e-4ab1-aa09-d5f2c28620b7"
+                                    alt="Shree Siddhivinayak Temple"
+                                    class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                            <li>
+                                <strong class="text-primary-dark">Global Vipassana Pagoda:</strong> A large meditation
+                                dome promoting peace and harmony (alternative serene experience).
+                                <img src="https://opal.withgoogle.com/board/blobs/e89a9311-be67-4c2a-ad89-d0425e6e3763"
+                                    alt="Global Vipassana Pagoda"
+                                    class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Breakfast Recommendations (in Bandra):</h4>
+                        <ul class="list-disc list-inside space-y-2 food-recommendation">
+                            <li><strong class="text-secondary-dark">Salt Water Café:</strong> For a fresh and delicious
+                                English breakfast, croissants, and scrambled eggs.</li>
+                            <li><strong class="text-secondary-dark">Bombay Coffee House:</strong> Offers an old-world
+                                charm with delicious all-day breakfast combos.</li>
+                            <li><strong class="text-secondary-dark">Kunjvihar Vada Pav Shop:</strong> A must-visit for
+                                affordable Vada Pavs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(1:30 PM - 2:30
+                        PM)</span> Modern Indian or Cafe Scene in Bandra</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Food Recommendations:</h4>
+                        <ul class="list-disc list-inside space-y-2 food-recommendation">
+                            <li><strong class="text-secondary-dark">The Bombay Canteen:</strong> Known for its
+                                innovative take on Indian cuisine with a modern twist.</li>
+                            <li><strong class="text-secondary-dark">Numerous cafe options in Bandra for a relaxed
+                                    setting.</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Afternoon -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(3:00 PM - 6:00
+                        PM)</span> Bandra Exploration &amp; Sea Link</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li>
+                                <strong class="text-primary-dark">Linking Road and Hill Road:</strong> Popular for
+                                fashion and accessories shopping.
+                                <img src="https://opal.withgoogle.com/board/blobs/6c12a70e-b41e-4458-8d85-39c0bba268a3"
+                                    alt="Linking Road and Hill Road"
+                                    class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                            <li>
+                                <strong class="text-primary-dark">Bandra Worli Sea Link:</strong> Drive across this
+                                impressive architectural marvel connecting Bandra to Worli.
+                                <img src="https://opal.withgoogle.com/board/blobs/6824554c-0880-442d-b50d-e85938adb6fe"
+                                    alt="Bandra Worli Sea Link"
+                                    class="mt-2 rounded-lg shadow-sm w-full h-48 object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evening -->
+            <div class="card-bg rounded-lg shadow-md p-6 mb-8 border-l-4 border-secondary-light">
+                <h3 class="subsection-title text-2xl font-semibold mb-4"><span class="time-slot">(6:30 PM
+                        onwards)</span> Juhu Beach Sunset</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Attractions:</h4>
+                        <ul class="list-disc list-inside space-y-2 attraction-description">
+                            <li><strong class="text-primary-dark">Juhu Beach:</strong> One of Mumbai's most popular
+                                beaches, ideal for a relaxed evening and beautiful sunsets.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Dinner Recommendations:</h4>
+                        <ul class="list-disc list-inside space-y-2 food-recommendation">
+                            <li><strong class="text-secondary-dark">Juhu Beach Street Food:</strong> Continue to enjoy
+                                street food from local vendors.</li>
+                            <li><strong class="text-secondary-dark">Bandra (for diverse options):</strong>
+                                <ul class="list-circle list-inside ml-4">
+                                    <li><strong class="text-tertiary-dark">Upscale:</strong> Hakkasan (Cantonese),
+                                        Bastian (inventive seafood), Pali Bhavan (traditional Indian).</li>
+                                    <li><strong class="text-tertiary-dark">Casual/Popular:</strong> Lucky Restaurant
+                                        (generous portions, wide variety), Carter's Blue (shawarmas, rolls), Momo
+                                        Station (steamed and fried momos).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button onclick="scrollToTop()"
+        class="scroll-to-top fixed bottom-6 right-6 p-3 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-light focus:ring-opacity-75">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const sections = document.querySelectorAll('main section[id]');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    const navLink = document.querySelector(`nav ul li a[href="#${id}"]`);
+
+                    if (navLink) {
+                        if (entry.isIntersecting) {
+                            navLink.classList.add('active');
+                        } else {
+                            navLink.classList.remove('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
