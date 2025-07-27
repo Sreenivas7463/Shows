@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Day Chennai Tour Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #00424a;
+            --primary-light: #edfcff;
+            --secondary-dark: #273f43;
+            --secondary-light: #dbf6fa;
+            --tertiary-dark: #2f3b58;
+            --tertiary-light: #bac6ea;
+            --background-color: #cde7ec;
+            --error-color: #de3730;
+            --neutral-dark: #393c3d;
+            --neutral-light: #f8fafa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--neutral-dark);
+        }
+
+        .text-primary-dark {
+            color: var(--primary-dark);
+        }
+
+        .bg-primary-dark {
+            background-color: var(--primary-dark);
+        }
+
+        .text-primary-light {
+            color: var(--primary-light);
+        }
+
+        .bg-primary-light {
+            background-color: var(--primary-light);
+        }
+
+        .text-secondary-dark {
+            color: var(--secondary-dark);
+        }
+
+        .bg-secondary-dark {
+            background-color: var(--secondary-dark);
+        }
+
+        .text-secondary-light {
+            color: var(--secondary-light);
+        }
+
+        .bg-secondary-light {
+            background-color: var(--secondary-light);
+        }
+
+        .text-tertiary-dark {
+            color: var(--tertiary-dark);
+        }
+
+        .bg-tertiary-dark {
+            background-color: var(--tertiary-dark);
+        }
+
+        .text-tertiary-light {
+            color: var(--tertiary-light);
+        }
+
+        .bg-tertiary-light {
+            background-color: var(--tertiary-light);
+        }
+
+        .text-neutral-dark {
+            color: var(--neutral-dark);
+        }
+
+        .bg-neutral-dark {
+            background-color: var(--neutral-dark);
+        }
+
+        .text-neutral-light {
+            color: var(--neutral-light);
+        }
+
+        .bg-neutral-light {
+            background-color: var(--neutral-light);
+        }
+
+        .section-heading {
+            @apply text-4xl md: text-5xl font-extrabold text-primary-dark mb-8 text-center;
+        }
+
+        .day-card {
+            @apply bg-neutral-light rounded-xl shadow-lg p-6 md: p-8 mb-12;
+        }
+
+        .day-title {
+            @apply text-3xl md: text-4xl font-bold text-tertiary-dark mb-6 border-b-2 border-secondary-light pb-4;
+        }
+
+        .itinerary-item {
+            @apply mb-4;
+        }
+
+        .itinerary-time {
+            @apply font-semibold text-secondary-dark text-lg;
+        }
+
+        .itinerary-description {
+            @apply text-neutral-dark leading-relaxed;
+        }
+
+        .attraction-grid {
+            @apply grid grid-cols-1 sm: grid-cols-2 lg:grid-cols-3 gap-6 mt-6;
+        }
+
+        .attraction-item {
+            @apply bg-secondary-light rounded-lg shadow-md overflow-hidden;
+        }
+
+        .attraction-item img {
+            @apply w-full h-48 object-cover;
+        }
+
+        .attraction-item p {
+            @apply p-4 text-secondary-dark font-medium;
+        }
+
+        .food-section {
+            @apply mt-8 pt-6 border-t-2 border-secondary-light;
+        }
+
+        .food-heading {
+            @apply text-2xl font-bold text-primary-dark mb-4;
+        }
+
+        .food-list {
+            @apply list-disc pl-5 text-neutral-dark leading-relaxed;
+        }
+
+        .food-list li {
+            @apply mb-2;
+        }
+
+        .nav-link {
+            @apply block py-2 px-4 text-primary-light hover: bg-primary-light hover:text-primary-dark transition-colors duration-300 rounded-md;
+        }
+
+        @media (max-width: 768px) {
+            .nav-link {
+                @apply text-center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-primary-dark text-primary-light py-12 text-center shadow-xl">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Chennai Unveiled</h1>
+        <p class="text-xl md:text-2xl font-light">Your 3-Day Heritage &amp; Coastal Journey</p>
+    </header>
+
+    <nav class="bg-secondary-dark py-4 shadow-md sticky top-0 z-50">
+        <div
+            class="container mx-auto flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8">
+            <a href="#day1" class="nav-link text-secondary-light">Day 1: Heritage &amp; Coastal Charm</a>
+            <a href="#day2" class="nav-link text-secondary-light">Day 2: Cultural Immersion &amp; Relaxed Beach
+                Vibes</a>
+            <a href="#day3" class="nav-link text-secondary-light">Day 3: Wildlife &amp; ECR Exploration</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <!-- Day 1 Section -->
+        <section id="day1" class="day-card">
+            <h2 class="day-title">Day 1: Heritage &amp; Coastal Charm</h2>
+
+            <div class="itinerary-section mb-8">
+                <h3 class="text-2xl font-bold text-secondary-dark mb-4">Daily Itinerary</h3>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Morning (9:00 AM - 1:00 PM):</p>
+                    <p class="itinerary-description">Begin your exploration with a visit to <strong>Fort St.
+                            George</strong>, the first English fortress in India. Explore St. Mary's Church within the
+                        fort and delve into colonial history at the Fort Museum. Afterwards, head to the
+                        <strong>Government Museum Egmore</strong>, known for its extensive collection of South Indian
+                        bronzes and ancient Roman antiquities.
+                    </p>
+                </div>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Lunch:</p>
+                    <p class="itinerary-description">Savor traditional South Indian Thali or choose from diverse local
+                        cuisines.</p>
+                </div>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Afternoon (3:00 PM - 5:30 PM):</p>
+                    <p class="itinerary-description">Visit <strong>Vivekananda House</strong>, a heritage building
+                        dedicated to Swami Vivekananda, offering cultural insights. Then, proceed to the stunning
+                        <strong>San Thome Cathedral Basilica</strong>, built over the tomb of St. Thomas, one of Jesus'
+                        twelve apostles.
+                    </p>
+                </div>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Evening (5:30 PM onwards):</p>
+                    <p class="itinerary-description">Conclude your day with a leisurely stroll along <strong>Marina
+                            Beach</strong>, one of the world's longest urban beaches. Enjoy the sunset and soak in the
+                        lively atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="attraction-section mb-8">
+                <h3 class="text-2xl font-bold text-secondary-dark mb-4">Specific Attractions</h3>
+                <div class="attraction-grid">
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/a944bb88-6b7f-402e-9665-f5bfb4b11d88"
+                            alt="Fort St. George">
+                        <p>Fort St. George (including St. Mary's Church and Fort Museum)</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/4514f84a-6d5e-49cd-8a5b-50a8e31a86b2"
+                            alt="Government Museum Egmore">
+                        <p>Government Museum Egmore</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/87b3f161-385c-4b66-b28e-365286f3e1e9"
+                            alt="Vivekananda House">
+                        <p>Vivekananda House</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/35113944-a5b0-4f16-acae-e84fb77f2c30"
+                            alt="San Thome Cathedral Basilica">
+                        <p>San Thome Cathedral Basilica</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/df841547-dc96-43f2-93ae-be89f0ff37ff"
+                            alt="Marina Beach">
+                        <p>Marina Beach</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-section">
+                <h3 class="food-heading">Food Recommendations</h3>
+                <ul class="food-list">
+                    <li><strong>Breakfast:</strong> Traditional Idli and Sambar, Dosa, or Pongal.</li>
+                    <li><strong>Lunch:</strong> Try a South Indian Vegetarian "Thali" (Saapadu). Recommended restaurants
+                        near Fort St. George/Government Museum: Sree Agarwal Bhojanaalay (Rajasthani Thali), Murugan
+                        Idli Shop (Idli/Dosa), A2B Veg Restaurant, Hotel Kalyana Bhavan Biryani (for non-vegetarian
+                        biryani).</li>
+                    <li><strong>Snacks on Marina Beach:</strong> Sample local street food like Sundal.</li>
+                    <li><strong>Dinner:</strong> Explore Chettinad cuisine (spicy non-vegetarian) or Chennai's
+                        distinctive Biryani. Recommended options: Anjappar Chettinad Restaurant or Dindigul
+                        Thalappakatti Restaurant.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Day 2 Section -->
+        <section id="day2" class="day-card">
+            <h2 class="day-title">Day 2: Cultural Immersion &amp; Relaxed Beach Vibes</h2>
+
+            <div class="itinerary-section mb-8">
+                <h3 class="text-2xl font-bold text-secondary-dark mb-4">Daily Itinerary</h3>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Morning (9:00 AM - 1:00 PM):</p>
+                    <p class="itinerary-description">Immerse yourself in the vibrant neighborhood of
+                        <strong>Mylapore</strong>, known for its rich culture and ancient temples. Visit the magnificent
+                        <strong>Kapaleeshwarar Temple</strong>, a 7th-century Dravidian-style temple dedicated to Lord
+                        Shiva.
+                    </p>
+                </div>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Lunch:</p>
+                    <p class="itinerary-description">Enjoy authentic South Indian delicacies within the Mylapore area.
+                    </p>
+                </div>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Afternoon (3:00 PM - 5:30 PM):</p>
+                    <p class="itinerary-description">Explore <strong>Valluvar Kottam</strong>, a chariot-shaped monument
+                        dedicated to the classical Tamil poet Thiruvalluvar. Afterwards, unwind at <strong>Semmozhi
+                            Poonga</strong>, Chennai's first botanical garden, offering a serene escape with diverse
+                        plant species.</p>
+                </div>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Evening (5:30 PM onwards):</p>
+                    <p class="itinerary-description">Head to <strong>Elliot's Beach (Besant Nagar Beach)</strong>, a
+                        more serene and less crowded alternative to Marina Beach. Enjoy the peaceful ambiance and the
+                        promenade lined with cafes. The Ashtalakshmi Temple is also nearby.</p>
+                </div>
+            </div>
+
+            <div class="attraction-section mb-8">
+                <h3 class="text-2xl font-bold text-secondary-dark mb-4">Specific Attractions</h3>
+                <div class="attraction-grid">
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/616d6080-f381-44b4-a9b4-2c65ec3250a6"
+                            alt="Mylapore neighborhood">
+                        <p>Mylapore neighborhood</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/a7131d3a-95f6-44a4-96e9-864e0ba2d38d"
+                            alt="Kapaleeshwarar Temple">
+                        <p>Kapaleeshwarar Temple</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/25f6ef57-5501-446f-922d-ebd6dd2a700b"
+                            alt="Valluvar Kottam">
+                        <p>Valluvar Kottam</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/a12f2e5c-4960-4154-bfa1-6082973104af"
+                            alt="Semmozhi Poonga">
+                        <p>Semmozhi Poonga</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/25197c8e-2747-4882-b463-700af902ecd8"
+                            alt="Elliot\" s="" beach="" (besant="" nagar="" beach)'="">
+                        <p>Elliot's Beach (Besant Nagar Beach)</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/9292ccbd-721e-4b9f-b6fd-7e77ddb02f49"
+                            alt="Ashtalakshmi Temple">
+                        <p>Ashtalakshmi Temple (near Elliot's Beach)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-section">
+                <h3 class="food-heading">Food Recommendations</h3>
+                <ul class="food-list">
+                    <li><strong>Breakfast:</strong> Filter Coffee is a must-try.</li>
+                    <li><strong>Lunch in Mylapore:</strong> Mylai Karpagambal Mess (famous for keerai vadai, podi dosa,
+                        filter coffee), Rayar's Mess (traditional breakfast/tiffin), or Jannal Kadai (known for hot
+                        bhajjis).</li>
+                    <li><strong>Dinner near Elliot's Beach:</strong> The Cascade (Chinese), The Kandyan (Sri Lankan),
+                        Eden (vegetarian), or Dindigul Thalappakatti (Biryani). For a unique experience, consider
+                        sea-facing restaurants like Bay 6 or Drizzle By The Beach.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Day 3 Section -->
+        <section id="day3" class="day-card">
+            <h2 class="day-title">Day 3: Wildlife &amp; East Coast Road Exploration</h2>
+
+            <div class="itinerary-section mb-8">
+                <h3 class="text-2xl font-bold text-secondary-dark mb-4">Daily Itinerary</h3>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Morning (9:00 AM - 1:00 PM):</p>
+                    <p class="itinerary-description">Choose your wildlife adventure:
+                    </p>
+                    <ul>
+                        <li>Option A: Visit <strong>Arignar Anna Zoological Park (Vandalur Zoo)</strong>, one of the
+                            largest zoos in Southeast Asia. (Allocate 3-4 hours due to its size).</li>
+                        <li>Option B: Explore <strong>Guindy National Park</strong> (India's smallest national park
+                            within a city) and the adjacent <strong>Madras Crocodile Bank Trust</strong> (a center for
+                            herpetological research). (Allocate 3-4 hours combined).</li>
+                    </ul>
+                    <p></p>
+                </div>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Lunch:</p>
+                    <p class="itinerary-description">Dine near your chosen wildlife attraction or proceed towards East
+                        Coast Road for a meal.</p>
+                </div>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Afternoon (2:30 PM - 5:30 PM):</p>
+                    <p class="itinerary-description">Enjoy a scenic drive along the <strong>East Coast Road
+                            (ECR)</strong>, known for its picturesque views. Visit the <strong>Mahabalipuram Shore
+                            Temple</strong>, a UNESCO World Heritage Site featuring ancient rock carvings and temples.
+                    </p>
+                </div>
+                <div class="itinerary-item">
+                    <p class="itinerary-time">Evening/Dinner (6:00 PM onwards):</p>
+                    <p class="itinerary-description">Experience a memorable dinner at one of the highly-rated
+                        restaurants along ECR, many offering unique ambiances and sea views.</p>
+                </div>
+            </div>
+
+            <div class="attraction-section mb-8">
+                <h3 class="text-2xl font-bold text-secondary-dark mb-4">Specific Attractions</h3>
+                <div class="attraction-grid">
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/4301fa74-b1bb-4f09-881e-c857a825ab92"
+                            alt="Arignar Anna Zoological Park (Vandalur Zoo)">
+                        <p>Arignar Anna Zoological Park (Vandalur Zoo)</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/7d5a78e3-e71e-49b1-bab1-cadc1761b213"
+                            alt="Guindy National Park &amp; Madras Crocodile Bank Trust">
+                        <p>Guindy National Park &amp; Madras Crocodile Bank Trust</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/60a522d7-4d6b-429e-9e29-ce2ae28f2c87"
+                            alt="East Coast Road (ECR) Scenic Drive">
+                        <p>East Coast Road (ECR) Scenic Drive</p>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://opal.withgoogle.com/board/blobs/36c88395-5f4f-46cb-b1e2-9aff3ba2a5f4"
+                            alt="Mahabalipuram Shore Temple">
+                        <p>Mahabalipuram Shore Temple</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-section">
+                <h3 class="food-heading">Food Recommendations</h3>
+                <ul class="food-list">
+                    <li><strong>Lunch near Vandalur/Guindy:</strong> Copper Kitchen (family-friendly, biryani), Buhari
+                        Hotel (non-vegetarian, biryani), or Sangeetha Veg Restaurant.</li>
+                    <li><strong>Dinner along ECR:</strong> The Wharf 2.0 (beachfront, seafood), Kai From The Sea (fresh
+                        fish, global cuisine), Thoondil (live seafood), The Farm (rustic, organic produce), or ECR Dhaba
+                        Restaurant (North Indian).</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary-dark text-primary-light py-8 text-center text-sm">
+        <p>© 2023 Chennai Tour Guide. All rights reserved.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
