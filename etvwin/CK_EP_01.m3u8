@@ -1,5 +1,5 @@
 #EXTM3U
-#EXT-X-VERSION:3
+#EXT-X-VERSION:6
 
 # Define the external audio group (point URI to your audio .m3u8 playlist)
 #EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="English",DEFAULT=YES,AUTOSELECT=YES,LANGUAGE="en",URI="https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep1/masterAAC.m3u8"
