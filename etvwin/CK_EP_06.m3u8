@@ -1,0 +1,22 @@
+#EXTM3U
+#EXT-X-VERSION:6
+
+# Define the external audio group (point URI to your audio .m3u8 playlist)
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="English",DEFAULT=YES,AUTOSELECT=YES,LANGUAGE="en",URI="https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep6/masterAAC.m3u8"
+
+# Subtitles track (replace URI with your subtitles playlist or file)
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="English",LANGUAGE="en",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,URI="https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep6/master_srt_000000000.cmft"
+
+# Video variants, reference the audio group using AUDIO="audio"
+# 2K Stream (QHD)
+#EXT-X-STREAM-INF:BANDWIDTH=12000000,RESOLUTION=2560x1440,CODECS="avc1.4d403a,mp4a.40.2",AUDIO="audio",SUBTITLES="subs"
+https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep6/master2160p.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=1920x1080,CODECS="avc1.4d401f,mp4a.40.2",AUDIO="audio",SUBTITLES="subs"
+https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep6/master1080p.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=600000,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2",AUDIO="audio",SUBTITLES="subs",DEFAULT=YES
+https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep6/master720p.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=400000,RESOLUTION=854x480,CODECS="avc1.4d401f,mp4a.40.2",AUDIO="audio",SUBTITLES="subs"
+https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep6/master480p.m3u8
