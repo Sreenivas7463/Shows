@@ -9,7 +9,7 @@
 
 # Video variants, reference the audio group using AUDIO="audio"
 # 2K Stream (QHD)
-#EXT-X-STREAM-INF:BANDWIDTH=5000000,RESOLUTION=1920x1080,CODECS="avc1.4d401f,mp4a.40.2",AUDIO="audio",SUBTITLES="subs"
+#EXT-X-STREAM-INF:BANDWIDTH=12000000,RESOLUTION=2560x1440,CODECS="avc1.4d403a,mp4a.40.2",AUDIO="audio",SUBTITLES="subs"
 https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep1/master2160p.m3u8
 
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=1920x1080,CODECS="avc1.4d401f,mp4a.40.2",AUDIO="audio",SUBTITLES="subs"
