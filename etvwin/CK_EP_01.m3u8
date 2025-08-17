@@ -5,7 +5,7 @@
 #EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="English",DEFAULT=YES,AUTOSELECT=YES,LANGUAGE="en",URI="https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep1/masterAAC.m3u8"
 
 # Subtitles track (replace URI with your subtitles playlist or file)
-#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="English",LANGUAGE="en",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,URI="https://etvwin-s3.akamaized.net/2222228469702d0990b50000_hq_ck/ep1/master_srt_000000000.cmft"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="English",LANGUAGE="en",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,URI="CK_EP_01.vtt"
 
 # Video variants, reference the audio group using AUDIO="audio"
 # 2K Stream (QHD)
