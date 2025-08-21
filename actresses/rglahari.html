@@ -50,9 +50,14 @@
             var xyz = '';
             var title = img[2].replace('%20', '');
 
+            var j = '';
+            if (urla[2]) {
+                j = urla[2];
+            } else {
+                j = 1;
+            }
 
-
-            for (i = 1; i <= urla[1]; i++) {
+            for (i = j; i <= urla[1]; i++) {
                 var thumb = 'https://img-wrapper.vercel.app/image?url=https://starzone.ragalahari.com/' + urla[0] + i + 't.jpg';
                 var pic = 'https://img-wrapper.vercel.app/image?url=https://starzone.ragalahari.com/' + urla[0] + i + '.jpg';
 
