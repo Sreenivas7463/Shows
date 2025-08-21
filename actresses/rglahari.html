@@ -56,10 +56,16 @@
             } else {
                 j = 1;
             }
+            var k = '';
+            if (urla[3]) {
+                k = urla[3];
+            } else {
+                k = 'starzone';
+            }
 
             for (i = j; i <= urla[1]; i++) {
-                var thumb = 'https://img-wrapper.vercel.app/image?url=https://starzone.ragalahari.com/' + urla[0] + i + 't.jpg';
-                var pic = 'https://img-wrapper.vercel.app/image?url=https://starzone.ragalahari.com/' + urla[0] + i + '.jpg';
+                var thumb = 'https://img-wrapper.vercel.app/image?url=https://' + k + '.ragalahari.com/' + urla[0] + i + 't.jpg';
+                var pic = 'https://img-wrapper.vercel.app/image?url=https://' + k + '.ragalahari.com/' + urla[0] + i + '.jpg';
 
                 xyz += '<a  class="gallery-item" data-src="' + pic + '" data-sub-html="<h4>' + title + '-' + i + '</h4>"> <img alt="' + title + '-' + i + '" class="img-responsive" src="' + thumb + '" /></a>';
             }
