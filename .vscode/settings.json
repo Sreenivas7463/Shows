@@ -2,5 +2,6 @@
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "atlascode.jira.enabled": false
+  "atlascode.jira.enabled": false,
+  "git.ignoreLimitWarning": true
 }
