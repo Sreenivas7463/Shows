@@ -46,7 +46,7 @@
 
             const urla = urlv.split("&");
 
-            const img = urla[0].split('/');
+            const img = urla[0];
             var xyz = '';
 
 
@@ -54,14 +54,14 @@
 
             for (i = 1; i <= urla[1]; i++) {
                 if (i <= 9) {
-                    var thumb = 'https://transform.gammacdn.com/photo_set/' + img[0] + '_00' + i + '.jpg?width=500&format=webp';
-                    var pic = 'https://transform.gammacdn.com/photo_set/' + img[0] + + '_00' + i + '.jpg';
+                    var thumb = 'https://transform.gammacdn.com/photo_set/' + img + '_00' + i + '.jpg?width=500&format=webp';
+                    var pic = 'https://transform.gammacdn.com/photo_set/' + img + + '_00' + i + '.jpg';
 
                     xyz += '<a  class="gallery-item" data-src="' + pic + '" data-sub-html="<h4>' + title + '-' + i + '</h4>"> <img alt="' + title + '-' + i + '" class="img-responsive" src="' + thumb + '" /></a>';
                 }
                 else {
-                    var thumb = 'https://transform.gammacdn.com/photo_set/' + img[0] + '_0' + i + '.jpg?width=500&format=webp';
-                    var pic = 'https://transform.gammacdn.com/photo_set/' + img[0] + '_0' + i + '.jpg';
+                    var thumb = 'https://transform.gammacdn.com/photo_set/' + img + '_0' + i + '.jpg?width=500&format=webp';
+                    var pic = 'https://transform.gammacdn.com/photo_set/' + img + '_0' + i + '.jpg';
 
                     xyz += '<a  class="gallery-item" data-src="' + pic + '" data-sub-html="<h4>' + title + '-' + i + '</h4>"> <img alt="' + title + '-' + i + '" class="img-responsive" src="' + thumb + '" /></a>';
                 }
