@@ -1,0 +1,33 @@
+<div class="owl-carousel">
+    <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/71cWnmix-nL._SL1500_.jpg" alt="Card image"  >
+  <div class="card-body">
+    <h4 class="card-title">AGARO Glucometer</h4>
+            <p class="card-text"AGARO Glucometer, Blood Glucose Monitoring System with 50pcs Strips & Lancets, Glucometer Machine, Instant Blood Sugar Test at Home, Fast Blood Sugar Testing Device, Simple & Accurate, GLM-76.
+</p>
+    <a href="https://amzn.to/46JnbG5" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+
+ <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/71uWIPFc4BL._SL1500_.jpg" alt="Card image"  >
+  <div class="card-body">
+      <h4 class="card-title">AGARO Glucometer</h4>
+            <p class="card-text"AGARO Glucometer, Blood Glucose Monitoring System with 50pcs Strips & Lancets, Glucometer Machine, Instant Blood Sugar Test at Home, Fast Blood Sugar Testing Device, Simple & Accurate, GLM-76.</p>
+    <a href="https://amzn.to/46JnbG5" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+ <div class="card">
+  <img class="card-img-top  img-fluid" src="https://m.media-amazon.com/images/I/71b8vIO1L7L._SL1500_.jpg" alt="Card image"  >
+  <div class="card-body">
+      <h4 class="card-title">AGARO Glucometer</h4>
+            <p class="card-text"AGARO Glucometer, Blood Glucose Monitoring System with 50pcs Strips & Lancets, Glucometer Machine, Instant Blood Sugar Test at Home, Fast Blood Sugar Testing Device, Simple & Accurate, GLM-76.
+</p>
+    <a href="https://amzn.to/46JnbG5" class="btn btn-warning" target="_blank">View Product</a>
+  </div>
+</div>
+
+
+</div>
